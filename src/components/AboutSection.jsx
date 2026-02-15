@@ -1,7 +1,7 @@
 import { FaUsers, FaIndustry, FaGlobeAsia, FaAward } from 'react-icons/fa';
 import chairman from "../assets/people/chairman.jpeg"
 import ceo from "../assets/people/ceo.jpg"
-import aziz_group_logo from "../assets/Aj_logo.png"
+import aziz_group_logo from "../assets/ajlogo.png"
 
 const AboutSection = () => {
   const leaders = [
