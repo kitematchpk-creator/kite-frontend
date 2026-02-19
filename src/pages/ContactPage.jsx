@@ -7,8 +7,8 @@ const ContactPage = () => {
       <section className="relative bg-gradient-to-r from-[#00AEEF] to-[#0095CC] text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl md:text-2xl">Get in Touch with Aziz Group</p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Information</h1>
+            <p className="text-xl md:text-2xl">Kite Brand - FMCG Division & Match Manufacturing</p>
           </div>
         </div>
       </section>
@@ -16,168 +16,187 @@ const ContactPage = () => {
       {/* Contact Information */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Headquarters */}
-          <div className="mb-16">
+          {/* FMCG Division Head Office */}
+          <div className="mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-[#222222] mb-8 text-center">
-              Headquarters
+              FMCG Division & Match Manufacturing Facilities
             </h2>
-            <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 max-w-4xl mx-auto">
-              <div className="flex items-start mb-6">
+            
+            {/* FMCG Division Head Office */}
+            <div className="bg-gradient-to-br from-[#00AEEF] to-[#0095CC] rounded-xl shadow-lg p-8 mb-6">
+              <div className="flex items-start mb-4">
+                <div className="bg-white/20 backdrop-blur-sm w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <FaBuilding className="text-white text-xl" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-white mb-3">FMCG Division Head Office</h3>
+                  <div className="text-white/95 space-y-2">
+                    <p className="flex items-start">
+                      <FaMapMarkerAlt className="mr-3 mt-1 flex-shrink-0" />
+                      <span>Industrial Estate, Old Jamrud Road, Peshawar, Pakistan</span>
+                    </p>
+                    <p className="flex items-center">
+                      <FaPhone className="mr-3 flex-shrink-0" />
+                      <span>Tel. No: +92-(0)91-5815056, 5815057</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mohsin Match Factory */}
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-[#00AEEF] mb-6">
+              <div className="flex items-start mb-4">
                 <div className="bg-[#00AEEF] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                   <FaBuilding className="text-white text-xl" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-[#222222] mb-2">AJ Tower</h3>
-                  <p className="text-lg text-[#666666]">
-                    Gulberg Green, Islamabad, Pakistan
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-[#222222] mb-3">Mohsin Match Factory Pvt. Ltd.</h3>
+                  <p className="text-sm text-[#00AEEF] font-semibold mb-3">Established 1974 - Earliest Private Sector Match Manufacturer in KPK</p>
+                  <div className="text-[#666666] space-y-2">
+                    <p className="flex items-start">
+                      <FaMapMarkerAlt className="text-[#ED028C] mr-3 mt-1 flex-shrink-0" />
+                      <span>Industrial Estate, Old Jamrud Road, Peshawar, Pakistan</span>
+                    </p>
+                    <p className="flex items-center">
+                      <FaPhone className="text-[#ED028C] mr-3 flex-shrink-0" />
+                      <span>Tel. No: +92-(0)91-5817787, 5817795</span>
+                    </p>
+                    <p className="flex items-center">
+                      <FaPhone className="text-[#ED028C] mr-3 flex-shrink-0" />
+                      <span>Fax No: +92-(0)91-5837648</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* A.J Match Factory */}
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-[#0095CC] mb-6">
+              <div className="flex items-start mb-4">
+                <div className="bg-[#0095CC] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <FaBuilding className="text-white text-xl" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-[#222222] mb-3">A.J Match Factory Pvt. Ltd.</h3>
+                  <p className="text-sm text-[#0095CC] font-semibold mb-3">Established 2006 - Sheikhupura Manufacturing Unit</p>
+                  <div className="text-[#666666] space-y-2">
+                    <p className="flex items-start">
+                      <FaMapMarkerAlt className="text-[#ED028C] mr-3 mt-1 flex-shrink-0" />
+                      <span>Mill Address: 26 KM Lahore Sheikhupura Road, Distt Sheikhupura, Pakistan</span>
+                    </p>
+                    <p className="flex items-center">
+                      <FaPhone className="text-[#ED028C] mr-3 flex-shrink-0" />
+                      <span>Tel. No: +92-(0)423-7332711-12</span>
+                    </p>
+                    <p className="flex items-center">
+                      <FaEnvelope className="text-[#ED028C] mr-3 flex-shrink-0" />
+                      <a href="mailto:aj.match@azizgrp.com" className="hover:text-[#00AEEF] transition-colors">
+                        E-Mail: aj.match@azizgrp.com
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mohsin Enterprises */}
+            <div className="bg-white rounded-xl shadow-lg p-8 border-2 border-[#00AEEF] mb-6">
+              <div className="flex items-start mb-4">
+                <div className="bg-[#00AEEF] w-12 h-12 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <FaBuilding className="text-white text-xl" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-[#222222] mb-3">Mohsin Enterprises Pvt. Ltd.</h3>
+                  <p className="text-sm text-[#00AEEF] font-semibold mb-3">Established 1990 - Group's 2nd Match Manufacturing Unit</p>
+                  <div className="text-[#666666] space-y-2">
+                    <p className="flex items-start">
+                      <FaMapMarkerAlt className="text-[#ED028C] mr-3 mt-1 flex-shrink-0" />
+                      <span>Address: W-21, 22 Industrial Estate, Jamrud Road, Hayatabad, Peshawar</span>
+                    </p>
+                    <p className="flex items-center">
+                      <FaPhone className="text-[#ED028C] mr-3 flex-shrink-0" />
+                      <span>Tel. No: +92-(0)91-5817461/7</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Other Divisions */}
+          <div className="mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#222222] mb-8 text-center">
+              Other Business Units
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Premier Formica */}
+              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                <h3 className="text-xl font-bold text-[#222222] mb-3">Premier Formica</h3>
+                <div className="text-sm text-[#666666] space-y-2">
+                  <p className="flex items-start">
+                    <FaMapMarkerAlt className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <span>Address: 92-E, Industrial Estate, Jamrud Road, Peshawar, Pakistan</span>
+                  </p>
+                  <p className="flex items-start">
+                    <FaPhone className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <span>Tel. No: +92-(0)91-5813051, 5817785, 5815057</span>
+                  </p>
+                  <p className="flex items-start">
+                    <FaPhone className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <span>Fax No: +92-(0)91-5812787</span>
+                  </p>
+                  <p className="flex items-start">
+                    <FaEnvelope className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <a href="mailto:formica@azizgrp.net.pk" className="hover:text-[#00AEEF] transition-colors">
+                      E-Mail: formica@azizgrp.net.pk
+                    </a>
                   </p>
                 </div>
               </div>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="flex items-start">
-                  <FaPhone className="text-[#ED028C] text-xl mr-3 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-[#222222] mb-1">Phone</h4>
-                    <p className="text-[#666666]">+92 51 111 254 947</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
-                  <FaEnvelope className="text-[#ED028C] text-xl mr-3 mt-1" />
-                  <div>
-                    <h4 className="font-semibold text-[#222222] mb-1">Email</h4>
-                    <p className="text-[#666666]">info@azizgrp.com</p>
-                  </div>
+
+              {/* A.J Textile Mills */}
+              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+                <h3 className="text-xl font-bold text-[#222222] mb-3">A.J Textile Mills Limited</h3>
+                <div className="text-sm text-[#666666] space-y-2">
+                  <p className="flex items-start">
+                    <FaMapMarkerAlt className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <span>Mill Address: Plot No 209 Industrial Estate, Gadoon Amazai, Swabi-Pakistan</span>
+                  </p>
+                  <p className="flex items-start">
+                    <FaPhone className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <span>Tel. No: +92-(0)938-270109, 270093, 270603</span>
+                  </p>
+                  <p className="flex items-start">
+                    <FaPhone className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <span>Fax No: +92-(0)938-270201</span>
+                  </p>
+                  <p className="flex items-start">
+                    <FaEnvelope className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <a href="mailto:ajtm.gdn@azizgrp.com" className="hover:text-[#00AEEF] transition-colors">
+                      E-Mail: ajtm.gdn@azizgrp.com
+                    </a>
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
 
-          {/* Regional Offices */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#222222] mb-8 text-center">
-              Regional Offices
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Islamabad */}
-              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                <div className="bg-[#00AEEF] w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <FaMapMarkerAlt className="text-white text-xl" />
-                </div>
-                <h3 className="text-xl font-bold text-[#222222] mb-2">Islamabad</h3>
-                <p className="text-[#666666] mb-3">
-                  AJ Tower, Gulberg Green
-                </p>
-                <p className="text-sm text-[#666666]">
-                  <strong>Phone:</strong> +92 51 111 254 947
-                </p>
-              </div>
-
-              {/* Lahore */}
-              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                <div className="bg-[#0095CC] w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <FaMapMarkerAlt className="text-white text-xl" />
-                </div>
-                <h3 className="text-xl font-bold text-[#222222] mb-2">Lahore</h3>
-                <p className="text-[#666666] mb-3">
-                  Regional Office
-                </p>
-                <p className="text-sm text-[#666666]">
-                  <strong>Phone:</strong> +92 42 111 254 947
-                </p>
-              </div>
-
-              {/* Peshawar */}
-              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                <div className="bg-[#00AEEF] w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <FaMapMarkerAlt className="text-white text-xl" />
-                </div>
-                <h3 className="text-xl font-bold text-[#222222] mb-2">Peshawar</h3>
-                <p className="text-[#666666] mb-3">
-                  Regional Office
-                </p>
-                <p className="text-sm text-[#666666]">
-                  <strong>Phone:</strong> +92 91 111 254 947
-                </p>
-              </div>
-
-              {/* Gadoon Swabi */}
-              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
-                <div className="bg-[#0095CC] w-12 h-12 rounded-full flex items-center justify-center mb-4">
-                  <FaMapMarkerAlt className="text-white text-xl" />
-                </div>
-                <h3 className="text-xl font-bold text-[#222222] mb-2">Gadoon Swabi</h3>
-                <p className="text-[#666666] mb-3">
-                  Manufacturing Facility
-                </p>
-                <p className="text-sm text-[#666666]">
-                  <strong>Phone:</strong> +92 938 111 254
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Divisions Contact */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#222222] mb-8 text-center">
-              Contact by Division
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-[#00AEEF] to-[#0095CC] rounded-xl shadow-lg p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Textile Division</h3>
-                <p className="text-white/90 mb-3">A.J Textile Mills Limited</p>
-                <div className="space-y-2">
+              {/* AJ Towers */}
+              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 md:col-span-2">
+                <h3 className="text-xl font-bold text-[#222222] mb-3">AJ Towers</h3>
+                <div className="text-sm text-[#666666] space-y-2">
+                  <p className="flex items-start">
+                    <FaMapMarkerAlt className="text-[#00AEEF] mr-2 mt-1 flex-shrink-0" />
+                    <span>Address: Plot No. 6, Main Expressway, Gulberg Green, Islamabad</span>
+                  </p>
                   <p className="flex items-center">
-                    <FaEnvelope className="text-white/90 mr-2" />
-                    <span className="text-white/90">textile@azizgrp.com</span>
+                    <FaPhone className="text-[#00AEEF] mr-2 flex-shrink-0" />
+                    <span>Cell No: +92 311 333 5550</span>
                   </p>
-                  <p className="flex items-center text-white/90">
-                    <FaPhone className="mr-2 text-white/90" />
-                    +92 51 111 254 947 (Ext: 101)
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#0095CC] to-[#007BA7] rounded-xl shadow-lg p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">FMCG Division</h3>
-                <p className="text-white/90 mb-3">Match Manufacturing & Export</p>
-                <div className="space-y-2">
-                  <p className="flex items-center text-white/90">
-                    <FaEnvelope className="mr-2 text-white/90" />
-                    fmcg@azizgrp.com
-                  </p>
-                  <p className="flex items-center text-white/90">
-                    <FaPhone className="mr-2 text-white/90" />
-                    +92 51 111 254 947 (Ext: 102)
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#0095CC] to-[#007BA7] rounded-xl shadow-lg p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Board Division</h3>
-                <p className="mb-3 text-white/90">MDF, Particle Board & Lamination</p>
-                <div className="space-y-2">
-                  <p className="flex items-center text-white/90">
-                    <FaEnvelope className="mr-2 text-white/90" />
-                    board@azizgrp.com
-                  </p>
-                  <p className="flex items-center text-white/90">
-                    <FaPhone className="mr-2 text-white/90" />
-                    +92 51 111 254 947 (Ext: 103)
-                  </p>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-br from-[#007BA7] to-[#006688] rounded-xl shadow-lg p-8 text-white">
-                <h3 className="text-2xl font-bold mb-4">Real Estate Division</h3>
-                <p className="mb-3 text-white/90">Property Development & Management</p>
-                <div className="space-y-2">
-                  <p className="flex items-center text-white/90">
-                    <FaEnvelope className="mr-2 text-white/90" />
-                    realestate@azizgrp.com
-                  </p>
-                  <p className="flex items-center text-white/90">
-                    <FaPhone className="mr-2 text-white/90" />
-                    +92 51 111 254 947 (Ext: 104)
+                  <p className="flex items-center">
+                    <FaEnvelope className="text-[#00AEEF] mr-2 flex-shrink-0" />
+                    <a href="mailto:info@ajtowers.com" className="hover:text-[#00AEEF] transition-colors">
+                      E-Mail: info@ajtowers.com
+                    </a>
                   </p>
                 </div>
               </div>
@@ -205,26 +224,26 @@ const ContactPage = () => {
             </div>
           </div>
 
-          {/* Google Map */}
+          {/* Google Map - Peshawar Head Office */}
           <div className="mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-[#222222] mb-8 text-center">
               Find Us on the Map
             </h2>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3318.5867945!2d73.0853!3d33.6997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDQxJzU5LjAiTiA3M8KwMDUnMDcuMSJF!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.4!2d71.5249!3d34.0151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAwJzU0LjQiTiA3McKwMzEnMjkuNiJF!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
                 width="100%"
                 height="500"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Aziz Group Location - Gulberg Green, Islamabad"
+                title="FMCG Division Head Office - Industrial Estate, Peshawar"
                 className="w-full"
               ></iframe>
             </div>
             <p className="text-center text-[#666666] mt-4 text-sm">
-              AJ Tower, Gulberg Green, Islamabad, Pakistan
+              FMCG Division Head Office - Industrial Estate, Old Jamrud Road, Peshawar, Pakistan
             </p>
           </div>
         </div>
@@ -234,21 +253,21 @@ const ContactPage = () => {
       <section className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Connect?
+            Ready to Connect with Kite Brand?
           </h2>
           <p className="text-xl text-text-white mb-8 max-w-2xl mx-auto">
-            We're here to answer your questions and discuss how we can help you
+            Contact us for product inquiries, bulk orders, private labeling, or export opportunities
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+92511112549477"
+              href="tel:+92915815056"
               className="inline-block bg-white text-[#00AEEF] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
             >
               <FaPhone className="inline mr-2" />
-              Call Us Now
+              Call FMCG Division
             </a>
             <a
-              href="mailto:info@azizgrp.com"
+              href="mailto:aj.match@azizgrp.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#00AEEF] transition-all duration-300 active:scale-95"

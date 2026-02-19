@@ -1,6 +1,6 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import mohsin_enterprises from "../assets/mohsin_enterprises_logo.jpeg"
+import kite_logo from "../assets/kite_logo.png"
 import AJMatch from "../assets/divisions/ajmatch.png"
 import MohsinEnterprises from "../assets/divisions/MohsinEnterprises.png"
 import MohsinMatch from "../assets/divisions/MohsinMatch.png"
@@ -16,6 +16,11 @@ const Footer = () => {
 
   const companyLogos = [
     {
+      name: 'kite logo',
+      logo: kite_logo,
+      alt: 'FMCG Division'
+    },
+    {
       name: 'A.J Match Factory',
       logo: AJMatch,
       alt: 'Mohsin Match Factory'
@@ -29,11 +34,6 @@ const Footer = () => {
       name: 'Mohsin Match Factory - Peshawar',
       logo: MohsinMatch,
       alt: 'Kite Brand'
-    },
-    {
-      name: 'Premier Boards - Sheikhupura, Lahore',
-      logo: PremierBoards,
-      alt: 'FMCG Division'
     },
   ];
 
