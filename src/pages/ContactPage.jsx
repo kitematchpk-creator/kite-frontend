@@ -125,13 +125,13 @@ const ContactPage = () => {
           </div>
 
           {/* Other Divisions */}
-          <div className="mb-16">
+          {/* <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#222222] mb-8 text-center">
               Other Business Units
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6"> */}
               {/* Premier Formica */}
-              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+              {/* <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
                 <h3 className="text-xl font-bold text-[#222222] mb-3">Premier Formica</h3>
                 <div className="text-sm text-[#666666] space-y-2">
                   <p className="flex items-start">
@@ -153,10 +153,10 @@ const ContactPage = () => {
                     </a>
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               {/* A.J Textile Mills */}
-              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
+              {/* <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200">
                 <h3 className="text-xl font-bold text-[#222222] mb-3">A.J Textile Mills Limited</h3>
                 <div className="text-sm text-[#666666] space-y-2">
                   <p className="flex items-start">
@@ -178,10 +178,10 @@ const ContactPage = () => {
                     </a>
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               {/* AJ Towers */}
-              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 md:col-span-2">
+              {/* <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 md:col-span-2">
                 <h3 className="text-xl font-bold text-[#222222] mb-3">AJ Towers</h3>
                 <div className="text-sm text-[#666666] space-y-2">
                   <p className="flex items-start">
@@ -201,7 +201,7 @@ const ContactPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Business Hours */}
           <div className="mb-16">
@@ -212,10 +212,7 @@ const ContactPage = () => {
               <h3 className="text-2xl font-bold text-[#222222] mb-4">Business Hours</h3>
               <div className="space-y-2 text-[#666666]">
                 <p className="text-lg">
-                  <strong className="text-[#222222]">Monday - Friday:</strong> 9:00 AM - 6:00 PM
-                </p>
-                <p className="text-lg">
-                  <strong className="text-[#222222]">Saturday:</strong> 9:00 AM - 2:00 PM
+                  <strong className="text-[#222222]">Monday - Saturday:</strong> 9:00 AM - 5:00 PM
                 </p>
                 <p className="text-lg">
                   <strong className="text-[#222222]">Sunday:</strong> Closed
@@ -231,7 +228,7 @@ const ContactPage = () => {
             </h2>
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.4!2d71.5249!3d34.0151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAwJzU0LjQiTiA3McKwMzEnMjkuNiJF!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13232.858554352488!2d71.41792789616898!3d33.98702021911197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d9105461e898f5%3A0xb2fcd597d83cf69a!2sMohsin%20Match%20Factory%20Pvt%20Ltd!5e0!3m2!1sen!2s!4v1771568110439!5m2!1sen!2s"
                 width="100%"
                 height="500"
                 style={{ border: 0 }}
@@ -243,7 +240,7 @@ const ContactPage = () => {
               ></iframe>
             </div>
             <p className="text-center text-[#666666] mt-4 text-sm">
-              FMCG Division Head Office - Industrial Estate, Old Jamrud Road, Peshawar, Pakistan
+              90-B Industrial estate, Jamrud Road, Hayatabad, Peshawar, Khyber Pakhtunkhwa, Peshawar, Pakistan, 25000
             </p>
           </div>
         </div>

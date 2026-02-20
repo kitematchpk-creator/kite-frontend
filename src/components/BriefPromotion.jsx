@@ -15,26 +15,26 @@ const BriefPromotion = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
-            <FaAward className="text-5xl text-text-white mx-auto mb-4" />
+          <div className="bg-white backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+            <FaAward className="text-5xl text-[#00AEEF] mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-3">Premium Quality</h3>
-            <p className="text-text-white-90">
+            <p className="text-black">
               Kite Glow with triple enzyme technology and Kite matches meeting international safety standards.
             </p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
-            <FaGift className="text-5xl text-text-white mx-auto mb-4" />
+          <div className="bg-white backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+            <FaGift className="text-5xl text-[#00AEEF] mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-3">Value for Money</h3>
-            <p className="text-text-white-90">
+            <p className="text-black">
               Competitive pricing with bulk order discounts for wholesalers and distributors across Pakistan.
             </p>
           </div>
 
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
-            <FaHandshake className="text-5xl text-text-white mx-auto mb-4" />
+          <div className="bg-white backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-300">
+            <FaHandshake className="text-5xl text-[#00AEEF] mx-auto mb-4" />
             <h3 className="text-2xl font-bold mb-3">Trusted Brand</h3>
-            <p className="text-text-white-90">
+            <p className="text-black">
               50+ years of manufacturing excellence. Exporting to 40+ countries with proven reliability.
             </p>
           </div>

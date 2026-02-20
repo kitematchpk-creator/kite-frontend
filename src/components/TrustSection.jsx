@@ -98,7 +98,7 @@ const TrustSection = () => {
         </div>
 
         {/* Achievements Section */}
-        <div className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] rounded-3xl p-12 mb-20">
+        {/* <div className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] rounded-3xl p-12 mb-20">
           <h3 className="text-white text-3xl md:text-4xl font-bold text-center mb-12">
             Our Achievements
           </h3>
@@ -117,7 +117,7 @@ const TrustSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Trusted Partners */}
         {/* <div>
