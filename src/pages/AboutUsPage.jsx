@@ -1,6 +1,6 @@
 import { FaLinkedin, FaBuilding, FaUniversity, FaAward, FaChartLine, FaUsers, FaHandshake } from 'react-icons/fa';
-import chairmanImg from '../assets/people/chairman.jpeg';
-import ceoImg from '../assets/people/ceo.jpg';
+import chairmanImg from '../assets/people/chairman.png';
+import ceoImg from '../assets/people/ceo.png';
 import waleedImg from '../assets/people/waleed.jpg';
 import azizgrp from "../assets/azizgrp.jpg";
 

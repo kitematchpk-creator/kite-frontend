@@ -1,6 +1,6 @@
 import { FaUsers, FaIndustry, FaGlobeAsia, FaAward } from 'react-icons/fa';
-import chairman from "../assets/people/chairman.jpeg"
-import ceo from "../assets/people/ceo.jpg"
+import chairman from "../assets/people/chairman.png"
+import ceo from "../assets/people/ceo.png"
 import aziz_group_logo from "../assets/ajlogo.png"
 import waleed from "../assets/people/waleed.jpg"
 
@@ -11,7 +11,7 @@ const AboutSection = () => {
       name: 'Mr. Mohsin Aziz',
       title: 'Chairman',
       image: chairman,
-      className: "h-120! scale-120! group-hover:scale-130! transition-transform duration-500! object-[20%_5%]!",
+      className: "h-120! scale-135! group-hover:scale-130! transition-transform duration-500! object-[20%_55%]!",
       bio: 'Senator in the Senate of Pakistan (2021-2027 & 2015-2021). Chairman of the Senate Standing Committee on Power. Former Director on the Board of the State Bank of Pakistan (2 terms), board member at HBL and PPL. Chairman of APTMA (2 terms) and President of Sarhad Chamber of Commerce & Industry.',
     },
     {
@@ -19,7 +19,7 @@ const AboutSection = () => {
       name: 'Mr. Afan Aziz',
       title: 'CEO',
       image: ceo,
-      className: "h-120! scale-120! group-hover:scale-130! transition-transform duration-500! object-[20%_5%]!",
+      className: "h-120! scale-155! group-hover:scale-130! transition-transform duration-500! object-[20%_75%]!",
       bio: 'Leads the Textile and Real Estate Divisions. Graduate of the London School of Economics (First Class Honours). Honorary Consul of South Korea for KPK. Member of UNICEF Pakistan Advisory Council. President of Sarhad Chamber (2011-12), Vice President of APTMA.',
     },
     {
