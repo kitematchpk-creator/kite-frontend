@@ -1,7 +1,10 @@
 import { FaFire, FaLayerGroup } from 'react-icons/fa';
-import premier_boards from "../assets/products/PremierFormicaBoards.jpeg"
-import BurqDetergent from "../assets/products/BurqDetergent.jpeg"
-import kite from "../assets/products/kite.jpeg"
+import kite_matches from "../assets/products/kite.jpeg";
+import burq_detergent from "../assets/products/BurqDetergent.jpeg";
+import kite_glow from "../assets/hero1.jpg";
+import vero from "../assets/hero4.jpg";
+import dishwash from "../assets/hero3.jpg";
+import { Link } from 'react-router-dom';
 
 const ProductsSection = () => {
   const products = [
@@ -53,7 +56,7 @@ const ProductsSection = () => {
           note: 'Group\'s 3rd match manufacturing unit'
         }
       ],
-      image: kite
+      image: kite_matches
     },
     {
       id: 'detergents',
@@ -63,6 +66,7 @@ const ProductsSection = () => {
       products: [
         {
           name: 'BURQ Action',
+          image: burq_detergent,
           tagline: 'دلچ کا صفائی یا صرف برق ایکشن لائیا',
           description: 'Premium detergent with Colour Guard technology for color protection',
           features: [
@@ -81,6 +85,7 @@ const ProductsSection = () => {
         },
         {
           name: 'Kite Glow',
+          image: kite_glow,
           tagline: 'کائٹ گلو لائے... بہتر پروخوشبو، بہترین صفائی!',
           description: 'Flagship brand launched in March 2025 with Triple Enzyme technology',
           features: [
@@ -100,6 +105,7 @@ const ProductsSection = () => {
         },
         {
           name: 'Vero Detergent',
+          image: vero,
           tagline: 'کپڑوں کو دین نئی نیک پہترین بحت کے ساتھ',
           description: 'Premium cleaning powder with natural ingredients',
           features: [
@@ -113,14 +119,14 @@ const ProductsSection = () => {
           ]
         }
       ],
-      services: 'Private labeling and toll manufacturing services available with minimal variation',
-      image: BurqDetergent
+      services: 'Private labeling and toll manufacturing services available with minimal variation'
     },
     {
       id: 'dishwash',
       title: 'Dish Wash Bar - Extra Strength',
       icon: <FaLayerGroup className="text-6xl text-[#059669]" />,
       description: 'Kite Dish Wash Bar with premium lemon fragrance and slow dissolution - beats market leaders. Perfect for sparkling clean dishes with powerful grease removal.',
+      image: dishwash,
       products: [
         {
           name: 'Kite Dish Wash Bar',
@@ -140,8 +146,7 @@ const ProductsSection = () => {
           ]
         }
       ],
-      services: 'Bulk orders and private labeling available',
-      image: BurqDetergent
+      services: 'Bulk orders and private labeling available'
     }
   ];
 
@@ -254,6 +259,17 @@ const ProductsSection = () => {
                     <div className="space-y-6 mb-6">
                       {product.products.map((item, idx) => (
                         <div key={idx} className="bg-white p-6 rounded-xl border-2 border-[#E0E0E0] hover:border-[#FF8ACE] transition-all duration-300">
+                          {/* Product Image */}
+                          {item.image && (
+                            <div className="mb-4">
+                              <img 
+                                src={item.image} 
+                                alt={item.name} 
+                                className="w-full h-64 object-cover rounded-lg"
+                              />
+                            </div>
+                          )}
+                          
                           <h4 className="text-[#222222] text-2xl font-bold mb-2">{item.name}</h4>
                           {item.tagline && (
                             <p className="text-[#00AEEF] font-semibold mb-2 italic text-lg">{item.tagline}</p>
@@ -303,19 +319,23 @@ const ProductsSection = () => {
                       ))}
                     </div>
 
-                    <div className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] text-white p-6 rounded-xl">
-                      <p className="font-semibold text-lg">💼 {product.services}</p>
-                    </div>
+                    {product.services && (
+                      <div className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] text-white p-6 rounded-xl">
+                        <p className="font-semibold text-lg">💼 {product.services}</p>
+                      </div>
+                    )}
                   </>
                 )}
               </div>
 
-              {/* Image Placeholder */}
-              <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+              {/* Main Product Image (Only for Matches and Dishwash) */}
+              {(product.id === 'matches' || product.id === 'dishwash') && product.image && (
+                <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                   <div className="relative z-10 text-center p-8">
                     <img src={product.image} alt={product.title} className="w-full h-full object-cover rounded-2xl" />
                   </div>
-              </div>
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -329,14 +349,16 @@ const ProductsSection = () => {
             Contact us for product inquiries, bulk orders, private labeling services, or export opportunities for Kite detergents, matches, and dish wash products.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="/contact"
-              className="bg-white text-[#00AEEF] px-8 py-4 rounded-full font-semibold hover:bg-[#F9F9F9] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
+            <Link
+              to="/contact" 
+              className="bg-white text-[#00AEEF] px-8 py-4 rounded-full font-semibold hover:bg-[#F9F9F9] transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95 cursor-pointer"
             >
               Request Quote
-            </a>
+            </Link>
             <a
-              href="tel:+92915815056"
+              href="https://wa.me/+923008592829"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#00AEEF] transition-all duration-300 active:scale-95"
             >
               Call Us Now

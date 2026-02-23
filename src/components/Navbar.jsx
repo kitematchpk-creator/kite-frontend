@@ -124,8 +124,15 @@ const Navbar = () => {
 
                 {/* Mega Menu */}
                 {item.megaMenu && openDropdown === item.name && (
-                  <div className="absolute left-1/2 transform -translate-x-1/2 -mt-1 w-[600px] bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50">
-                    <div className="grid grid-cols-3 gap-6 p-6">
+                  <div 
+                    className="absolute left-1/2 transform -translate-x-1/2 -mt-1 w-[700px] bg-white rounded-lg shadow-xl border border-gray-200 overflow-visible z-50"
+                    onMouseEnter={() => setOpenDropdown(item.name)}
+                    onMouseLeave={() => {
+                      setOpenDropdown(null);
+                      setHoveredSubmenu(null);
+                    }}
+                  >
+                    <div className="grid grid-cols-3 gap-8 p-8">
                       {item.megaMenu.map((category) => (
                         <div key={category.title}>
                           <h3 className="text-sm font-bold text-primary mb-3 uppercase tracking-wide">
@@ -144,12 +151,16 @@ const Navbar = () => {
                                 >
                                   <div className="flex items-center justify-between text-sm px-3 py-1.5 rounded cursor-pointer text-text-secondary hover:text-primary hover:bg-accent-tint transition-all duration-200">
                                     <span className="font-medium">{submenu.title}</span>
-                                    <FaChevronDown className="text-xs ml-1" />
+                                    <FaChevronDown className="text-xs ml-0" />
                                   </div>
                                   
                                   {/* Submenu Items */}
                                   {hoveredSubmenu === submenu.title && (
-                                    <div className="absolute left-full top-0 ml-2 w-48 bg-white rounded-lg shadow-xl border border-gray-200 overflow-hidden z-50">
+                                    <div 
+                                      className="absolute left-full top-0 ml-0 w-52 bg-white rounded-lg shadow-xl border border-gray-200 z-[60]"
+                                      onMouseEnter={() => setHoveredSubmenu(submenu.title)}
+                                      onMouseLeave={() => setHoveredSubmenu(null)}
+                                    >
                                       <div className="p-3 space-y-1">
                                         {submenu.items.map((menuItem) => (
                                           <Link
