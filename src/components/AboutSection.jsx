@@ -1,6 +1,6 @@
 import { FaUsers, FaIndustry, FaGlobeAsia, FaAward } from 'react-icons/fa';
 import chairman from "../assets/people/chairman.png"
-import ceo from "../assets/people/ceo.png"
+import ceo from "../assets/people/ceo.jpeg"
 import aziz_group_logo from "../assets/ajlogo.png"
 import waleed from "../assets/people/waleed.jpg"
 
@@ -11,7 +11,7 @@ const AboutSection = () => {
       name: 'Mr. Mohsin Aziz',
       title: 'Chairman',
       image: chairman,
-      className: "h-120! scale-135! group-hover:scale-130! transition-transform duration-500! object-[20%_55%]!",
+      className: "h-120! scale-110! group-hover:scale-120! transition-transform duration-500! object-[20%_55%]!",
       bio: 'Senator in the Senate of Pakistan (2021-2027 & 2015-2021). Chairman of the Senate Standing Committee on Power. Former Director on the Board of the State Bank of Pakistan (2 terms), board member at HBL and PPL. Chairman of APTMA (2 terms) and President of Sarhad Chamber of Commerce & Industry.',
     },
     {
@@ -19,7 +19,7 @@ const AboutSection = () => {
       name: 'Mr. Afan Aziz',
       title: 'CEO',
       image: ceo,
-      className: "h-120! scale-155! group-hover:scale-130! transition-transform duration-500! object-[20%_75%]!",
+      className: "h-120! scale-120! group-hover:scale-130! transition-transform duration-500! object-[20%_5%]!",
       bio: 'Leads the Textile and Real Estate Divisions. Graduate of the London School of Economics (First Class Honours). Honorary Consul of South Korea for KPK. Member of UNICEF Pakistan Advisory Council. President of Sarhad Chamber (2011-12), Vice President of APTMA.',
     },
     {
@@ -27,7 +27,7 @@ const AboutSection = () => {
       name: 'Mr. Waleed Elahi',
       title: 'Managing Director - FMCG',
       image: waleed,
-      className: "h-120! group-hover:scale-110 transition-transform duration-500! object-[50%_20%]!",
+      className: "h-120! scale-155! group-hover:scale-165! transition-transform duration-500! object-[50%_20%]!",
       bio: 'Over 20 years in Marketing, Sales, and Distribution. MD of FMCG Division for 10 years. Graduate of University of Wisconsin-Madison; MBA from LUMS (Bronze Medalist). Previous experience with Pakistan Tobacco Company.',
     },
   ];
@@ -89,7 +89,7 @@ const AboutSection = () => {
             </p>
             <p className="text-[#222222] text-lg leading-relaxed mb-6">
               <span className="font-bold text-[#00AEEF]">Kite Dish Wash Bar</span> has rapidly achieved good market growth due to its 
-              <span className="font-bold">premium fragrance, advanced cleaning formulation, and slow water dissolution</span> that not only matches 
+              <span className="font-bold"> premium fragrance, advanced cleaning formulation, and slow water dissolution</span> that not only matches 
               but beats market leaders while maintaining competitive pricing.
             </p>
             <p className="text-[#666666] text-lg leading-relaxed">
@@ -172,7 +172,7 @@ const AboutSection = () => {
             We are committed to excellence in FMCG manufacturing and distribution, providing quality Kite brand products 
             to households and businesses. Our vision is to make Kite the most trusted household brand in Pakistan and 
             continue expanding our global presence, always maintaining our core values of quality, integrity, 
-            innovation, and customer satisfaction.
+            innovation, and customer satisfaction.p
           </p>
         </div>
       </div>

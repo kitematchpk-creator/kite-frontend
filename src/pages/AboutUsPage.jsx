@@ -1,5 +1,5 @@
 import chairmanImg from '../assets/people/chairman.png';
-import ceoImg from '../assets/people/ceo.png';
+import ceoImg from '../assets/people/ceo.jpeg';
 import waleedImg from '../assets/people/waleed.jpg';
 import azizgrp from "../assets/azizgrp.jpg";
 

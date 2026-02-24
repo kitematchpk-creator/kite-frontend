@@ -98,15 +98,15 @@ const HeroCarousel = () => {
               <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center z-20">
                 <div className="max-w-3xl space-y-6 animate-fade-in-up">
                   {/* Decorative Line */}
-                  <div className="flex items-center gap-4 mb-8">
+                  {/* <div className="flex items-center gap-4 mb-8">
                     <div className="w-20 h-1 bg-gradient-to-r from-primary to-transparent animate-pulse"></div>
                     <span className="text-white text-sm font-bold tracking-[0.3em] uppercase drop-shadow-lg">
                       Trusted Quality Since 1975
                     </span>
-                  </div>
+                  </div> */}
 
                   {/* Title with Glowing Effect */}
-                  <h1
+                  {/* <h1
                     className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-[1.1] tracking-tight"
                     style={{
                       textShadow: `0 0 30px ${slide.accentColor}40, 0 10px 40px rgba(0,0,0,0.9), 0 5px 15px rgba(0,0,0,0.8)`,
@@ -114,20 +114,20 @@ const HeroCarousel = () => {
                     }}
                   >
                     {slide.title}
-                  </h1>
+                  </h1> */}
 
                   {/* Subtitle with Glass Effect */}
-                  <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-6 shadow-2xl">
+                  {/* <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-6 shadow-2xl">
                     <h2 className="text-white text-lg sm:text-xl md:text-2xl font-semibold mb-3 leading-relaxed">
                       {slide.subtitle}
                     </h2>
                     <p className="text-gray-200 text-base sm:text-lg leading-relaxed">
                       {slide.description}
                     </p>
-                  </div>
+                  </div> */}
 
                   {/* CTA Button with Premium Design */}
-                    <div className="flex flex-wrap gap-4 mt-8">
+                    {/* <div className="flex flex-wrap gap-4 mt-8">
                       
                       <button
                         onClick={() => navigate(slide.link)}
@@ -135,9 +135,9 @@ const HeroCarousel = () => {
                         style={{
                           boxShadow: `0 10px 40px ${slide.accentColor}40`,
                         }}
-                      >
+                      > */}
                         {/* Button Shine Effect */}
-                        <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
+                        {/* <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></span>
                         <span className="relative flex items-center gap-3">
                           View Products
                           <svg
@@ -178,7 +178,7 @@ const HeroCarousel = () => {
                           </svg>
                         </span>
                       </button>
-                    </div>
+                    </div> */}
                 </div>
               </div>
 

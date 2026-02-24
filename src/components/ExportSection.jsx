@@ -108,8 +108,8 @@ const ExportSection = () => {
           </h3>
           
           {/* Map Placeholder */}
-          <div className="relative h-150 bg-gray-500 rounded-3xl flex items-center justify-center mb-12 overflow-hidden group">
-            <img src={world_map_export_destinations} alt="Global Export Map" className="w-full  object-contain" />
+          <div className="relative bg-gray-500 rounded-3xl flex items-center justify-center mb-12 overflow-hidden group">
+            <img src={world_map_export_destinations} alt="Global Export Map" className="w-full  object-cover" />
           </div>
 
           {/* Countries Grid */}

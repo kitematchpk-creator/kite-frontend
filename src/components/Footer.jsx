@@ -75,9 +75,9 @@ const Footer = () => {
   return (
     <footer className="bg-[#222222] text-white">
       {/* Company Logos Section */}
-      <div className="bg-[#1a1a1a] border-b border-white/10">
+      <div className="bg-[#1a1a1a] border-b border-white/10 w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 items-center justify-items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 items-center justify-center justify-items-center">
             {companyLogos.map((company, index) => (
               <div
                 key={index}
@@ -117,7 +117,7 @@ const Footer = () => {
                 <FaFacebook className="text-lg text-white group-hover:text-white" />
               </a>
               <a
-                href="https://www.instagram.com/kitematchpk/"
+                href="https://www.instagram.com/kitematch/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#F56040] p-3 rounded-full transition-all duration-300 active:scale-90 group"
@@ -125,7 +125,7 @@ const Footer = () => {
                 <FaInstagram className="text-lg text-white group-hover:text-white" />
               </a>
               <a
-                href="https://www.youtube.com/kitematchpk"
+                href="https://www.youtube.com/@kitematch"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 hover:bg-[#FF0000] p-3 rounded-full transition-all duration-300 active:scale-90 group"
