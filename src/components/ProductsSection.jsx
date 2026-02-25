@@ -1,9 +1,9 @@
 import { FaFire, FaLayerGroup } from 'react-icons/fa';
 import kite_matches from "../assets/products/kite.jpeg";
 import burq_detergent from "../assets/products/BurqDetergent.jpeg";
-import kite_glow from "../assets/hero1.jpg";
+// import kite_glow from "../assets/hero1.jpg";
 import vero from "../assets/hero4.jpeg";
-import dishwash from "../assets/hero3.jpeg";
+import dishwash from "../assets/hero3.jpg";
 import { Link } from 'react-router-dom';
 
 const ProductsSection = () => {
@@ -85,7 +85,7 @@ const ProductsSection = () => {
         },
         {
           name: 'Kite Glow',
-          image: kite_glow,
+          image: vero,
           tagline: 'کائٹ گلو لائے... بہتر پروخوشبو، بہترین صفائی!',
           description: 'Flagship brand launched in March 2025 with Triple Enzyme technology',
           features: [

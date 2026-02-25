@@ -322,7 +322,7 @@ const ExportSection = () => {
           </div>
 
           {/* Countries Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {Object.entries(exportCountries).map(([region, data]) => (
               <div
                 key={region}
@@ -348,7 +348,7 @@ const ExportSection = () => {
                 </ul>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Export Services */}
