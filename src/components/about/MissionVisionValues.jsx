@@ -9,18 +9,18 @@ const MissionVisionValues = () => {
 
   const cards = [
     {
-      letter: 'M',
-      title: 'Mission',
-      description: 'To build the Company on sound value systems, being steadfast on all commitments and striving to achieve excellence in productivity, quality and efficiency, creating an ecosystem that encourages positivity amongst all stakeholders and is a harbinger for growth.',
-      gradient: 'from-[#00AEEF] to-[#0095CC]',
-      border: 'border-[#00AEEF]'
-    },
-    {
       letter: 'V',
       title: 'Vision',
       description: 'To serve as a transformative agent of positive change for our stakeholders and the wider community by relentlessly pursuing ethical practices and sustainable values. We aim to redefine industry standards through a legacy of responsibility, ensuring that our long-term growth serves the greater good and inspires a more conscious, value-driven global marketplace.',
       gradient: 'from-[#ED028C] to-[#FF8ACE]',
       border: 'border-[#ED028C]'
+    },
+    {
+      letter: 'M',
+      title: 'Mission',
+      description: 'To build the Company on sound value systems, being steadfast on all commitments and striving to achieve excellence in productivity, quality and efficiency, creating an ecosystem that encourages positivity amongst all stakeholders and is a harbinger for growth.',
+      gradient: 'from-[#00AEEF] to-[#0095CC]',
+      border: 'border-[#00AEEF]'
     },
     {
       letter: 'V',

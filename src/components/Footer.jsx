@@ -144,7 +144,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="" >
+          <div className="">
             <h3 className="text-xl font-bold mb-6 text-[#00AEEF]">
               Quick Links
             </h3>
@@ -180,7 +180,7 @@ const Footer = () => {
                     <h4 className="text-white font-bold mb-3 text-lg">
                       {info.title}
                     </h4>
-                    <ul className="space-y-2 text-sm grid md:grid-cols-3 gap-4">
+                    <ul className="space-y-2 text-sm flex flex-wrap justify-between gap-4">
                       <li className="flex items-start">
                         <FaMapMarkerAlt className="text-[#00AEEF] mt-1 mr-3 flex-shrink-0" />
                         <span className="text-white/80">{info.address}</span>
@@ -208,55 +208,54 @@ const Footer = () => {
                 ))}
 
               {/* Other Contact Locations - Three Column Grid */}
-              
             </div>
           </div>
         </div>
         <div>
-<div className="grid md:grid-cols-3 gap-4">
-                {contactInfo
-                  .filter((info) => !info.isHeadquarter)
-                  .map((info, index) => (
-                    <div
-                      key={index}
-                      className="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-all duration-300"
-                    >
-                      <h4 className="text-white font-bold mb-3 text-sm">
-                        {info.title}
-                      </h4>
-                      <ul className="space-y-2 text-xs">
-                        <li className="flex items-start">
-                          <FaMapMarkerAlt className="text-[#00AEEF] mt-1 mr-2 flex-shrink-0 text-xs" />
-                          <span className="text-white/80">{info.address}</span>
-                        </li>
-                        <li className="flex items-center">
-                          <FaPhone className="text-[#00AEEF] mr-2 flex-shrink-0 text-xs" />
-                          <a
-                            href={`tel:${info.phone.replace(/[^0-9+]/g, "")}`}
-                            className="text-white/80 hover:text-[#00AEEF] transition-colors"
-                          >
-                            {info.phone}
-                          </a>
-                        </li>
-                        {/* {info.fax && (
+          <div className="grid md:grid-cols-3 gap-4">
+            {contactInfo
+              .filter((info) => !info.isHeadquarter)
+              .map((info, index) => (
+                <div
+                  key={index}
+                  className="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-all duration-300"
+                >
+                  <h4 className="text-white font-bold mb-3 text-sm">
+                    {info.title}
+                  </h4>
+                  <ul className="space-y-2 text-xs">
+                    <li className="flex items-start">
+                      <FaMapMarkerAlt className="text-[#00AEEF] mt-1 mr-2 flex-shrink-0 text-xs" />
+                      <span className="text-white/80">{info.address}</span>
+                    </li>
+                    <li className="flex items-center">
+                      <FaPhone className="text-[#00AEEF] mr-2 flex-shrink-0 text-xs" />
+                      <a
+                        href={`tel:${info.phone.replace(/[^0-9+]/g, "")}`}
+                        className="text-white/80 hover:text-[#00AEEF] transition-colors"
+                      >
+                        {info.phone}
+                      </a>
+                    </li>
+                    {/* {info.fax && (
                         <li className="flex items-center">
                           <FaPhone className="text-[#00AEEF] mr-2 flex-shrink-0 text-xs" />
                           <span className="text-white/80">Fax: {info.fax}</span>
                         </li>
                       )} */}
-                        <li className="flex items-center">
-                          <FaEnvelope className="text-[#00AEEF] mr-2 flex-shrink-0 text-xs" />
-                          <a
-                            href={`mailto:${info.email}`}
-                            className="text-white/80 hover:text-[#00AEEF] transition-colors break-all"
-                          >
-                            {info.email}
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  ))}
-              </div>
+                    <li className="flex items-center">
+                      <FaEnvelope className="text-[#00AEEF] mr-2 flex-shrink-0 text-xs" />
+                      <a
+                        href={`mailto:${info.email}`}
+                        className="text-white/80 hover:text-[#00AEEF] transition-colors break-all"
+                      >
+                        {info.email}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              ))}
+          </div>
         </div>
       </div>
 

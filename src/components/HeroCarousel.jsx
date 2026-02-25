@@ -6,10 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import hero1 from "../assets/hero1.jpg";
 import hero2 from "../assets/hero2.jpg";
 import hero3 from "../assets/hero3.jpg";
-import hero4 from "../assets/hero4.jpg";
+import hero4 from "../assets/hero4.jpeg";
 
 const HeroCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);

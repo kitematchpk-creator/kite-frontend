@@ -16,7 +16,7 @@ const TrustSection = () => {
     {
       icon: <FaCertificate className="text-5xl text-[#00AEEF]" />,
       title: 'Internationally Certified',
-      description: 'Multiple certifications including ISO, BSCI, GOTS, and OEKO-TEX for quality assurance.',
+      description: 'Multiple certification including ISO 9001, UKAS, IAF',
     },
     {
       icon: <FaGlobe className="text-5xl text-[#ED028C]" />,

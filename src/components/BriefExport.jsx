@@ -1,5 +1,5 @@
-import { FaGlobeAsia, FaShippingFast, FaCertificate } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaGlobeAsia, FaShippingFast, FaCertificate } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BriefExport = () => {
   return (
@@ -15,17 +15,21 @@ const BriefExport = () => {
               Kite Matches - Exporting to 40+ Countries
             </h3>
             <p className="text-[#666666] text-lg leading-relaxed mb-8">
-              Since 1995, Mohsin Match Factory has been Pakistan's largest safety match exporter, delivering 
-              Kite brand matches across Europe, Asia, Africa, and the Middle East with uncompromising quality.
+              Since 1995, Mohsin Match Factory has been Pakistan's largest
+              safety match exporter, delivering matches across Europe, Asia,
+              Africa, and the Middle East with uncompromising quality.
             </p>
 
             <div className="space-y-4 mb-8">
               <div className="flex items-start">
                 <FaGlobeAsia className="text-3xl text-[#00AEEF] mr-4 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="text-[#222222] text-xl font-bold mb-2">International Presence</h4>
+                  <h4 className="text-[#222222] text-xl font-bold mb-2">
+                    International Presence
+                  </h4>
                   <p className="text-[#666666]">
-                    Established partnerships in Germany, France, Italy, Saudi Arabia, South Africa, and more
+                    Established partnerships in Saudi Arabia, UAE, South Africa,
+                    Romania, Ukraine, Lebanon, Nigeria, Sudan, and more
                   </p>
                 </div>
               </div>
@@ -33,9 +37,12 @@ const BriefExport = () => {
               <div className="flex items-start">
                 <FaShippingFast className="text-3xl text-[#ED028C] mr-4 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="text-[#222222] text-xl font-bold mb-2">Reliable Logistics</h4>
+                  <h4 className="text-[#222222] text-xl font-bold mb-2">
+                    Reliable Logistics
+                  </h4>
                   <p className="text-[#666666]">
-                    Complete export services including documentation, shipping, and customs clearance
+                    Complete export services including documentation, shipping,
+                    and customs clearance
                   </p>
                 </div>
               </div>
@@ -43,9 +50,12 @@ const BriefExport = () => {
               <div className="flex items-start">
                 <FaCertificate className="text-3xl text-[#00AEEF] mr-4 flex-shrink-0 mt-1" />
                 <div>
-                  <h4 className="text-[#222222] text-xl font-bold mb-2">Quality Assured</h4>
+                  <h4 className="text-[#222222] text-xl font-bold mb-2">
+                    Quality Assured
+                  </h4>
                   <p className="text-[#666666]">
-                    All products come with international certifications and quality guarantees
+                    All products come with international certifications and
+                    quality guarantees
                   </p>
                 </div>
               </div>

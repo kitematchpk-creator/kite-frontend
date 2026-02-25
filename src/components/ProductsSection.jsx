@@ -2,8 +2,8 @@ import { FaFire, FaLayerGroup } from 'react-icons/fa';
 import kite_matches from "../assets/products/kite.jpeg";
 import burq_detergent from "../assets/products/BurqDetergent.jpeg";
 import kite_glow from "../assets/hero1.jpg";
-import vero from "../assets/hero4.jpg";
-import dishwash from "../assets/hero3.jpg";
+import vero from "../assets/hero4.jpeg";
+import dishwash from "../assets/hero3.jpeg";
 import { Link } from 'react-router-dom';
 
 const ProductsSection = () => {

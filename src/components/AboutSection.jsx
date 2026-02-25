@@ -34,6 +34,11 @@ const AboutSection = () => {
 
   const stats = [
     {
+      icon: <FaAward className="text-5xl text-[#ED028C]" />,
+      number: '50+',
+      label: 'Years Legacy',
+    },
+    {
       icon: <FaUsers className="text-5xl text-[#00AEEF]" />,
       number: '10,000+',
       label: 'Employees',
@@ -47,11 +52,6 @@ const AboutSection = () => {
       icon: <FaGlobeAsia className="text-5xl text-[#00AEEF]" />,
       number: '40+',
       label: 'Export Countries',
-    },
-    {
-      icon: <FaAward className="text-5xl text-[#ED028C]" />,
-      number: '50+',
-      label: 'Years Legacy',
     },
   ];
 
@@ -172,7 +172,7 @@ const AboutSection = () => {
             We are committed to excellence in FMCG manufacturing and distribution, providing quality Kite brand products 
             to households and businesses. Our vision is to make Kite the most trusted household brand in Pakistan and 
             continue expanding our global presence, always maintaining our core values of quality, integrity, 
-            innovation, and customer satisfaction.p
+            innovation, and customer satisfaction.
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import { FaGift, FaAward, FaHandshake } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaGift, FaAward, FaHandshake } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BriefPromotion = () => {
   return (
@@ -10,7 +10,8 @@ const BriefPromotion = () => {
             Why Choose Kite Brand?
           </h2>
           <p className="text-text-white-90 text-lg max-w-3xl mx-auto">
-            Premium quality products with competitive pricing - from detergents to matches and dish wash bars
+            Premium quality products with competitive pricing - from matches to
+            detergents and dish wash bars
           </p>
         </div>
 
@@ -19,7 +20,8 @@ const BriefPromotion = () => {
             <FaAward className="text-5xl text-[#00AEEF] mx-auto mb-4 group-hover:text-black" />
             <h3 className="text-2xl font-bold mb-3">Premium Quality</h3>
             <p className="text-black">
-              Kite Glow with triple enzyme technology and Kite matches meeting international safety standards.
+              Kite Matches meeting international safety standards. Kite Glow
+              Detergent with Triple enzymes Formula.
             </p>
           </div>
 
@@ -27,7 +29,8 @@ const BriefPromotion = () => {
             <FaGift className="text-5xl text-[#00AEEF] mx-auto mb-4 group-hover:text-black" />
             <h3 className="text-2xl font-bold mb-3">Value for Money</h3>
             <p className="text-black">
-              Competitive pricing with bulk order discounts for wholesalers and distributors across Pakistan.
+              Competitive pricing with bulk order discounts for wholesalers and
+              distributors across Pakistan.
             </p>
           </div>
 
@@ -35,7 +38,8 @@ const BriefPromotion = () => {
             <FaHandshake className="text-5xl text-[#00AEEF] mx-auto mb-4 group-hover:text-black" />
             <h3 className="text-2xl font-bold mb-3">Trusted Brand</h3>
             <p className="text-black">
-              50+ years of manufacturing excellence. Exporting to 40+ countries with proven reliability.
+              50+ years of manufacturing excellence. Exporting to 40+ countries
+              with proven reliability.
             </p>
           </div>
         </div>

@@ -2,7 +2,45 @@ import { FaGlobeAsia, FaShippingFast, FaCertificate, FaHandshake, FaFileContract
 import world_map_export_destinations from '../assets/fmcgForeignDestination.jpeg';
 import export_shipping_container from '../assets/delivery.jpeg';
 
+// Import match images
+import simba from '../assets/export/simba.jpg';
+import football from '../assets/export/football.jpg';
+import alMoallam from '../assets/export/al_moallam.jpg';
+import redMac from '../assets/export/red_mac.jpg';
+import woodFlower from '../assets/export/wood_flower.jpg';
+import alKarama from '../assets/export/al_karama.jpg';
+import theGosse from '../assets/export/the_gosse.jpg';
+import ziynat from '../assets/export/ziynat.jpg';
+import alFelaij from '../assets/export/al_felaij.jpg';
+import magiaBunicii from '../assets/export/magia_bunicii.jpg';
+import zebra from '../assets/export/zebra.jpg';
+import zippy from '../assets/export/zippy.jpg';
+
 const ExportSection = () => {
+  const safetyMatches = [
+    { brand: 'Simba', country: 'Congo', image: simba, flag: '🇨🇩' },
+    { brand: 'Football', country: 'Saudi Arabia', image: football, flag: '🇸🇦' },
+    { brand: 'Al Moallam', country: 'Sudan', image: alMoallam, flag: '🇸🇩' },
+    { brand: 'ReD Mac', country: 'Ukraine', image: redMac, flag: '🇺🇦' },
+    { brand: 'Wood Flower', country: 'Romania', image: woodFlower, flag: '🇷🇴' },
+    { brand: 'Al Karama', country: 'Sudan', image: alKarama, flag: '🇸🇩' },
+    { brand: 'The Gosse', country: 'Nigeria', image: theGosse, flag: '🇳🇬' },
+    { brand: 'Ziynat', country: 'Uzbekistan', image: ziynat, flag: '🇺🇿' },
+    { brand: 'Al Felaij', country: 'UAE', image: alFelaij, flag: '🇦🇪' },
+    { brand: 'Magia bunicii', country: 'Romania', image: magiaBunicii, flag: '🇷🇴' },
+    { brand: 'Zebra', country: 'Lebanon', image: zebra, flag: '🇱🇧' },
+    { brand: 'Zippy', country: 'South Africa', image: zippy, flag: '🇿🇦' }
+  ];
+
+  const woodenSplints = [
+    { country: 'Kenya', flag: '🇰🇪', color: '#00AEEF' },
+    { country: 'Hungary', flag: '🇭🇺', color: '#ED028C' },
+    { country: 'Honduras', flag: '🇭🇳', color: '#00AEEF' },
+    { country: 'Ethiopia', flag: '🇪🇹', color: '#ED028C' },
+    { country: 'Egypt', flag: '🇪🇬', color: '#00AEEF' },
+    { country: 'Tanzania', flag: '🇹🇿', color: '#ED028C' }
+  ];
+
   const exportCountries = {
     'Europe': {
       countries: ['Germany', 'France', 'Spain', 'Italy', 'Greece'],
@@ -99,6 +137,107 @@ const ExportSection = () => {
               <div className="text-sm text-white/80">{stat.sublabel}</div>
             </div>
           ))}
+        </div>
+
+        {/* Safety Matches Export Menu */}
+        <div className="mb-20">
+          <h3 className="text-[#222222] text-3xl font-bold text-center mb-4">
+            Our Safety Match Brands
+          </h3>
+          <p className="text-[#666666] text-center mb-12 max-w-2xl mx-auto">
+            Premium quality safety matches exported to countries worldwide
+          </p>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {safetyMatches.map((match, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-2 border-[#E0E0E0] hover:border-[#00AEEF]"
+              >
+                <div className="aspect-[3/4] bg-gray-100 overflow-hidden">
+                  <img 
+                    src={match.image} 
+                    alt={match.brand} 
+                    className="w-full h-full object-contain p-4"
+                  />
+                </div>
+                <div className="p-4 text-center border-t-2 border-[#E0E0E0]">
+                  <h4 className="text-[#222222] font-bold text-lg mb-2">{match.brand}</h4>
+                  <div className="flex items-center justify-center gap-2 text-[#666666]">
+                    <span className="text-2xl">{match.flag}</span>
+                    <span className="font-medium">{match.country}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Wooden Splints Export Section */}
+        <div className="mb-20">
+          <h3 className="text-[#222222] text-3xl font-bold text-center mb-4">
+            Wooden Splints Export
+          </h3>
+          <p className="text-[#666666] text-center mb-12 max-w-2xl mx-auto">
+            High-quality wooden splints delivered to multiple countries across Africa, Europe, and Central America
+          </p>
+
+          <div className="bg-gradient-to-br from-[#00AEEF] to-[#0095CC] rounded-3xl p-8 md:p-12 shadow-2xl">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="relative">
+                {/* Map Visualization */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border-2 border-white/30">
+                  <div className="text-center mb-6">
+                    <div className="text-6xl mb-4">🌍</div>
+                    <h4 className="text-white text-2xl font-bold drop-shadow-lg">Global Splint Distribution</h4>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    {woodenSplints.map((splint, index) => (
+                      <div 
+                        key={index}
+                        className="bg-white rounded-xl p-4 text-center hover:scale-105 transition-all duration-300 shadow-lg"
+                      >
+                        <div className="text-4xl mb-2">{splint.flag}</div>
+                        <div className="text-[#222222] font-semibold">{splint.country}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-white">
+                <h4 className="text-3xl font-bold mb-6 drop-shadow-lg">Premium Wooden Splints</h4>
+                <p className="text-white/90 text-lg mb-6 leading-relaxed">
+                  We export high-quality wooden splints to our partners across multiple continents. 
+                  Our splints meet international standards and are trusted by manufacturers worldwide.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <FaCheckCircle className="text-2xl flex-shrink-0 mt-1" />
+                    <div>
+                      <h5 className="font-semibold text-lg mb-1">Quality Assured</h5>
+                      <p className="text-white/80">Premium wood selection and processing</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <FaCheckCircle className="text-2xl flex-shrink-0 mt-1" />
+                    <div>
+                      <h5 className="font-semibold text-lg mb-1">Reliable Supply</h5>
+                      <p className="text-white/80">Consistent delivery to 6+ countries</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <FaCheckCircle className="text-2xl flex-shrink-0 mt-1" />
+                    <div>
+                      <h5 className="font-semibold text-lg mb-1">Global Standards</h5>
+                      <p className="text-white/80">Meets international quality requirements</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Export Countries */}
