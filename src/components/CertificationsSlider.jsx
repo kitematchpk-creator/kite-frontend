@@ -3,86 +3,57 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import inditex from "../assets/certificates/inditex.png";
-import shirt from "../assets/certificates/shirt.png";
-import primark from "../assets/certificates/primark.png";
-import confidence from "../assets/certificates/confidence.png";
-import organic from "../assets/certificates/organic.png";
-import world from "../assets/certificates/world.png";
-import bci from "../assets/certificates/bci.png";
-import oeko from "../assets/certificates/oeko.png";
-import cotton from "../assets/certificates/cotton.png";
-import cotton_africa from "../assets/certificates/cotton_africa.png";
-import blended from "../assets/certificates/blended.png";
+import efs from "../assets/certificates/efs.png";
+import fbr from "../assets/certificates/fbr.png";
+import iaf from "../assets/certificates/iaf.png";
+import iso900 from "../assets/certificates/iso900.png";
+import ps from "../assets/certificates/ps.png";
+import secp from "../assets/certificates/secp.png";
+import ukas from "../assets/certificates/ukas.png";
 
 const CertificationsSlider = () => {
   const certifications = [
     {
       id: 1,
-      title: "Inditex",
-      image: inditex,
-      bgColor: "#8B1538",
+      title: "Export Excellence Score",
+      image: efs,
+      bgColor: "#00AEEF",
     },
     {
       id: 2,
-      title: "shirt",
-      image: shirt,
-      bgColor: "#00AEEF",
+      title: "Federal Board of Revenue",
+      image: fbr,
+      bgColor: "#4CAF50",
     },
-    ,
     {
       id: 3,
-      title: "primark",
-      image: primark,
-      bgColor: "#4CAF50",
+      title: "International Accreditation Forum",
+      image: iaf,
+      bgColor: "#003366",
     },
     {
       id: 4,
-      title: "confidence",
-      image: confidence,
-      bgColor: "#00BCD4",
-    },
-    {
-      id: 5,
-      title: "organic",
-      image: organic,
+      title: "ISO 9001",
+      image: iso900,
       bgColor: "#FF9800",
     },
     {
-      id: 6,
-      title: "world",
-      image: world,
+      id: 5,
+      title: "Pakistan Standards",
+      image: ps,
       bgColor: "#4CAF50",
+    },
+    {
+      id: 6,
+      title: "SECP",
+      image: secp,
+      bgColor: "#00BCD4",
     },
     {
       id: 7,
-      title: "bci",
-      image: bci,
-      bgColor: "#8BC34A",
-    },
-    {
-      id: 8,
-      title: "oeko",
-      image: oeko,
-      bgColor: "#003366",
-    },
-    {
-      id: 9,
-      title: "cotton",
-      image: cotton,
+      title: "UKAS Management Systems",
+      image: ukas,
       bgColor: "#8B1538",
-    },
-    {
-      id: 10,
-      title: "cotton_africa",
-      image: cotton_africa,
-      bgColor: "#4CAF50",
-    },
-    {
-      id: 11,
-      title: "blended",
-      image: blended,
-      bgColor: "#003366",
     },
   ];
 
@@ -137,7 +108,7 @@ const CertificationsSlider = () => {
                   <img
                     src={cert.image}
                     alt={cert.title}
-                    className="w-full h-48 object-contain group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-48! object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
