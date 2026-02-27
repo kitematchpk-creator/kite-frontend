@@ -47,7 +47,7 @@ const Footer = () => {
       title: "FMCG Division Head Office",
       address: "Industrial Estate, Old Jamrud Road, Peshawar, Pakistan",
       phone: "+92-(0)91-5815056, 5815057",
-      email: "fd@kitematchpk.com",
+      // email: "fd@kitematchpk.com",
       isHeadquarter: true,
     },
     {
@@ -55,7 +55,7 @@ const Footer = () => {
       address: "90-B, Industrial Estate, Old Jamrud Road, Peshawar, Pakistan",
       phone: "+92-(0)91-5812787, 5812785",
       fax: "+92-(0)91-5837646",
-      email: "fd@kitematchpk.com",
+      // email: "fd@kitematchpk.com",
     },
     {
       title: "A.J Match Factory Pvt. Ltd.",
@@ -68,7 +68,7 @@ const Footer = () => {
       title: "Mohsin Enterprises Pvt. Ltd.",
       address: "W-21, 22 Industrial Estate, Jumrud Road, Hayatabad Peshawar",
       phone: "+92-(0)91-581741617",
-      email: "fd@kitematchpk.com",
+      // email: "fd@kitematchpk.com",
     },
   ];
 

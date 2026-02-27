@@ -21,7 +21,7 @@ const TrustSection = () => {
     {
       icon: <FaGlobe className="text-5xl text-[#ED028C]" />,
       title: 'Global Reach',
-      description: 'Exporting to over 40 countries across Europe, Asia, and Africa with USD 100M+ in sales.',
+      description: 'Exporting to over 40 countries across Europe, Asia, and Africa.',
     },
   ];
 
