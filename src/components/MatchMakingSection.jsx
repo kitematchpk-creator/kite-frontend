@@ -83,7 +83,7 @@ const MatchMakingSection = () => {
       </div>
 
       {/* Manufacturing Process Steps */}
-      <div className="absolute -bottom-4 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8 z-20">
+      {/* <div className="absolute -bottom-4 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8 z-20">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-black">
             <div className="text-center">
@@ -108,7 +108,7 @@ const MatchMakingSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
