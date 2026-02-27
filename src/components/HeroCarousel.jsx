@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+import { Autoplay, Pagination, Navigation, EffectFade, EffectCube, EffectCreative, EffectCards } from "swiper/modules";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "swiper/css";
@@ -58,8 +58,8 @@ const HeroCarousel = () => {
       </div>
 
       <Swiper
-        modules={[Autoplay, Pagination, Navigation, EffectFade]}
-        effect="fade"
+        modules={[Autoplay, Pagination, Navigation, EffectFade,EffectCards]}
+        effect="cards"
         spaceBetween={0}
         slidesPerView={1}
         navigation
@@ -83,10 +83,10 @@ const HeroCarousel = () => {
                   className="absolute inset-0 w-full h-full object-cover object-center"
                 />
                 {/* Subtle Gradient Overlay for Text Readability */}
-                <div
+                {/* <div
                   className={`absolute inset-0 bg-gradient-to-r ${slide.gradient}`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" /> */}
               </div>
 
               {/* Decorative Elements - Hidden for cleaner look */}

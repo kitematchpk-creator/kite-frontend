@@ -127,7 +127,7 @@ const AboutSection = () => {
               Our Leadership
             </h3>
             <p className="text-[#666666] text-lg max-w-3xl mx-auto">
-              Meet the visionary leaders driving Kite brand's success and FMCG excellence
+              Meet the visionary leaders driving our brand's success and FMCG excellence
             </p>
           </div>
 
