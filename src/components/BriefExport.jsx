@@ -28,8 +28,9 @@ const BriefExport = () => {
                     International Presence
                   </h4>
                   <p className="text-[#666666]">
-                    Established partnerships in Saudi Arabia, UAE, South Africa,
-                    Romania, Ukraine, Lebanon, Nigeria, Sudan, and more
+                    Established partnerships in Congo, South Africa, Saudi
+                    Arabia,  Romania, UAE, Ukraine, Lebanon, Uzbekistan, Nigeria, Sudan, Kenya, Hungary, Honduras, Ethopia, Egypt, Tanzania and
+                    more
                   </p>
                 </div>
               </div>
