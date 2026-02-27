@@ -100,12 +100,12 @@ const HeroCarousel = () => {
               {/* Background Image - Full Cover */}
               <div className="absolute inset-0">
                 <Link to={slide.link} className="block w-full h-full">
-                <img
-                  src={slide.image}
-                  alt={slide.title}
-                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  <img
+                    src={slide.image}
+                    alt={slide.title}
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                   />
-                  </Link>
+                </Link>
                 {/* Subtle Gradient Overlay for Text Readability */}
                 {/* <div
                   className={`absolute inset-0 bg-gradient-to-r ${slide.gradient}`}
