@@ -26,23 +26,23 @@ import zippy from "../assets/export/zippy.jpg";
 
 const ExportSection = () => {
   const safetyMatches = [
-    { brand: "Simba", country: "Congo", image: simba, flag: "🇨🇩" },
-    { brand: "Football", country: "Saudi Arabia", image: football, flag: "🇸🇦" },
-    { brand: "Al Moallam", country: "Sudan", image: alMoallam, flag: "🇸🇩" },
-    { brand: "ReD Mac", country: "Ukraine", image: redMac, flag: "🇺🇦" },
-    { brand: "Wood Flower", country: "Romania", image: woodFlower, flag: "🇷🇴" },
-    { brand: "Al Karama", country: "Sudan", image: alKarama, flag: "🇸🇩" },
-    { brand: "The Gosse", country: "Nigeria", image: theGosse, flag: "🇳🇬" },
-    { brand: "Ziynat", country: "Uzbekistan", image: ziynat, flag: "🇺🇿" },
-    { brand: "Al Felaij", country: "UAE", image: alFelaij, flag: "🇦🇪" },
+    { brand: "Simba", country: "Congo", image: simba, },
+    { brand: "Wood Flower", country: "Romania", image: woodFlower,  },
+    { brand: "Al Felaij", country: "UAE", image: alFelaij, },
+    { brand: "The Gosse", country: "Nigeria", image: theGosse,  },
+    { brand: "Football", country: "Saudi Arabia", image: football,  },
     {
       brand: "Magia bunicii",
       country: "Romania",
       image: magiaBunicii,
-      flag: "🇷🇴",
+      
     },
-    { brand: "Zebra", country: "Lebanon", image: zebra, flag: "🇱🇧" },
-    { brand: "Zippy", country: "South Africa", image: zippy, flag: "🇿🇦" },
+    { brand: "Zebra", country: "Lebanon", image: zebra, },
+    { brand: "Zippy", country: "South Africa", image: zippy, },
+    { brand: "Al Karama", country: "Sudan", image: alKarama, },
+    { brand: "Al Moallam", country: "Sudan", image: alMoallam,},
+    { brand: "Ziynat", country: "Uzbekistan", image: ziynat,  },
+    { brand: "ReD Mac", country: "Ukraine", image: redMac,  },
   ];
 
   const woodenSplints = [
@@ -79,7 +79,7 @@ const ExportSection = () => {
 
   const exportServices = [
     {
-      icon: <FaShippingFast className="text-5xl text-white" />,
+      icon: <FaShippingFast className="text-5xl" />,
       title: "Complete Logistics",
       description:
         "End-to-end shipping solutions including container booking, cargo handling, and delivery tracking to over 40 countries.",
@@ -91,7 +91,7 @@ const ExportSection = () => {
       ],
     },
     {
-      icon: <FaFileContract className="text-5xl text-white" />,
+      icon: <FaFileContract className="text-5xl" />,
       title: "Documentation Support",
       description:
         "Full assistance with export documentation, permits, certificates of origin, and regulatory compliance.",
@@ -99,11 +99,10 @@ const ExportSection = () => {
         "Export licenses",
         "Customs clearance",
         "Certificate of origin",
-        "Phytosanitary certificates",
       ],
     },
     {
-      icon: <FaCertificate className="text-5xl text-white" />,
+      icon: <FaCertificate className="text-5xl" />,
       title: "Quality Certifications",
       description:
         "All products come with international quality certifications meeting global standards and buyer requirements.",
@@ -115,7 +114,7 @@ const ExportSection = () => {
       ],
     },
     {
-      icon: <FaHandshake className="text-5xl text-white" />,
+      icon: <FaHandshake className="text-5xl" />,
       title: "Partnership Programs",
       description:
         "Long-term partnerships with dedicated account managers, competitive pricing, and flexible payment terms.",
@@ -244,12 +243,12 @@ const ExportSection = () => {
                     {woodenSplints.map((splint, index) => (
                       <div
                         key={index}
-                        className="bg-white rounded-xl p-4 text-center hover:scale-105 transition-all duration-300 shadow-lg"
+                        className="bg-white hover:border-[#ED028C] border-4 border-transparent rounded-xl p-4 text-center hover:scale-105 transition-all duration-300 shadow-lg"
                       >
-                        <div className="text-4xl mb-2">{splint.flag}</div>
-                        <div className="text-[#222222] font-semibold">
+                        <div className="text-[#222222] text-lg font-semibold">
                           {splint.country}
                         </div>
+                        <div className="text-4xl mb-2 text-md!">{splint.flag}</div>
                       </div>
                     ))}
                   </div>
@@ -361,10 +360,10 @@ const ExportSection = () => {
             {exportServices.map((service, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-[#00AEEF] to-[#0095CC] rounded-2xl p-8 text-white hover:shadow-2xl hover:scale-105 transition-all duration-300"
+                className="bg-gradient-to-br group from-[#00AEEF] to-[#0095CC] rounded-2xl p-8 text-white hover:shadow-2xl hover:border-[#ED028C] border-4 border-transparent hover:scale-102 transition-all duration-300"
               >
                 <div className="flex items-start gap-6 mb-6">
-                  <div className="flex-shrink-0">{service.icon}</div>
+                  <div className="flex-shrink-0 text-white group-hover:text-[#ED028C]">{service.icon}</div>
                   <div>
                     <h4 className="text-2xl font-bold mb-3 drop-shadow-md">
                       {service.title}
@@ -377,7 +376,7 @@ const ExportSection = () => {
                 <ul className="space-y-2 pl-6">
                   {service.points.map((point, idx) => (
                     <li key={idx} className="flex items-center text-white/90">
-                      <FaCheckCircle className="mr-3 flex-shrink-0" />
+                      <FaCheckCircle className="mr-3 flex-shrink-0 text-white group-hover:text-[#ED028C]" />
                       {point}
                     </li>
                   ))}
@@ -390,7 +389,7 @@ const ExportSection = () => {
         {/* Achievements */}
         <div className="mb-16">
           <h3 className="text-[#222222] text-3xl font-bold text-center mb-12">
-            Why Choose Aziz Group for Export?
+            Why Choose Us for Export?
           </h3>
 
           <div className="bg-white rounded-2xl border-2 border-[#E0E0E0] p-8 md:p-12">
@@ -468,7 +467,7 @@ const ExportSection = () => {
             <div>
               <p className="text-[#666666]">
                 <strong className="text-[#222222]">Phone:</strong>{" "}
-                +92-(0)300-8592829
+                +92-300-8592829
               </p>
             </div>
           </div>

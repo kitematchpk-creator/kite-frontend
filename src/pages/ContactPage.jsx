@@ -36,7 +36,7 @@ const ContactPage = () => {
                     </p>
                     <p className="flex items-center">
                       <FaPhone className="mr-3 flex-shrink-0" />
-                      <span>Tel. No: +92-(0)91-5815056, 5815057</span>
+                      <span>Tel. No: +92-91-5815056, 5815057</span>
                     </p>
                   </div>
                 </div>
@@ -59,11 +59,11 @@ const ContactPage = () => {
                     </p>
                     <p className="flex items-center">
                       <FaPhone className="text-[#ED028C] mr-3 flex-shrink-0" />
-                      <span>Tel. No: +92-(0)91-5817787, 5817795</span>
+                      <span>Tel. No: +92-91-5817787, 5817795</span>
                     </p>
                     <p className="flex items-center">
                       <FaPhone className="text-[#ED028C] mr-3 flex-shrink-0" />
-                      <span>Fax No: +92-(0)91-5837648</span>
+                      <span>Fax No: +92-91-5837648</span>
                     </p>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ const ContactPage = () => {
                     </p>
                     <p className="flex items-center">
                       <FaPhone className="text-[#ED028C] mr-3 flex-shrink-0" />
-                      <span>Tel. No: +92-(0)423-7332711-12</span>
+                      <span>Tel. No: +92-423-7332711-12</span>
                     </p>
                     <p className="flex items-center">
                       <FaEnvelope className="text-[#ED028C] mr-3 flex-shrink-0" />
