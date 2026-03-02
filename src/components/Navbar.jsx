@@ -26,36 +26,12 @@ const Navbar = () => {
       megaMenu: [
         {
           title: "Safety Matches",
-          hasSubmenu: true,
-          submenus: [
-            {
-              title: "Export Brands",
-              items: [
-                { name: "Simba", href: "/products/simba" },
-                { name: "Football", href: "/products/football" },
-                { name: "Al Moallam", href: "/products/al-moallam" },
-                { name: "ReD MaC", href: "/products/red-mac" },
-                { name: "T-Match", href: "/products/t-match" },
-                { name: "Wood Flower", href: "/products/wood-flower" },
-                { name: "Al Karama", href: "/products/al-karama" },
-                { name: "The Goose", href: "/products/the-goose" },
-                { name: "Ziynat", href: "/products/ziynat" },
-                { name: "Al Felaji", href: "/products/al-felaji" },
-                { name: "Magia bunicii", href: "/products/magia-bunicii" },
-                { name: "Zebra", href: "/products/zebra" },
-                { name: "Zippy", href: "/products/zippy" },
-              ],
-            },
-            {
-              title: "Local Brands",
-              items: [
-                { name: "Kite", href: "/products/kite-matches" },
-                { name: "Bird", href: "/products/bird" },
-                { name: "Olympia", href: "/products/olympia" },
-                { name: "Party", href: "/products/party" },
-                { name: "Tanga", href: "/products/tanga" },
-              ],
-            },
+          items: [
+            { name: "Kite", href: "/products/kite-matches" },
+            { name: "Olympia", href: "/products/olympia" },
+            { name: "Party", href: "/products/party" },
+            { name: "Tanga", href: "/products/tanga" },
+            { name: "Bird", href: "/products/bird" },
           ],
         },
         {
@@ -138,7 +114,7 @@ const Navbar = () => {
                 {/* Mega Menu */}
                 {item.megaMenu && openDropdown === item.name && (
                   <div
-                    className="absolute left-1/2 transform -translate-x-1/2 -mt-1 w-[700px] bg-white rounded-lg shadow-xl border border-gray-200 overflow-visible z-50"
+                    className="absolute left-1/2 transform -translate-x-1/2 mt-0 w-[700px] bg-white rounded-lg shadow-xl border border-gray-200 overflow-visible z-50"
                     onMouseEnter={() => setOpenDropdown(item.name)}
                     onMouseLeave={() => {
                       setOpenDropdown(null);
@@ -152,75 +128,23 @@ const Navbar = () => {
                             {category.title}
                           </h3>
 
-                          {/* Category with Submenu (Safety Matches) */}
-                          {category.hasSubmenu ? (
-                            <ul className="space-y-2">
-                              {category.submenus.map((submenu) => (
-                                <li
-                                  key={submenu.title}
-                                  className="relative group/submenu"
-                                  onMouseEnter={() =>
-                                    setHoveredSubmenu(submenu.title)
-                                  }
-                                  onMouseLeave={() => setHoveredSubmenu(null)}
+                          {/* Category Items */}
+                          <ul className="space-y-2">
+                            {category.items.map((menuItem) => (
+                              <li key={menuItem.name}>
+                                <Link
+                                  to={menuItem.href}
+                                  className={`block text-sm px-3 py-1 rounded transition-all duration-200 focus:outline-none ${
+                                    isActive(menuItem.href)
+                                      ? "text-primary bg-accent-tint font-semibold"
+                                      : "text-text-secondary hover:text-primary hover:bg-accent-tint"
+                                  }`}
                                 >
-                                  <div className="flex items-center justify-between text-sm px-3 py-1.5 rounded cursor-pointer text-text-secondary hover:text-primary hover:bg-accent-tint transition-all duration-200">
-                                    <span className="font-medium">
-                                      {submenu.title}
-                                    </span>
-                                    <FaChevronDown className="text-xs ml-0" />
-                                  </div>
-
-                                  {/* Submenu Items */}
-                                  {hoveredSubmenu === submenu.title && (
-                                    <div
-                                      className="absolute left-full top-0 ml-0 w-52 bg-white rounded-lg shadow-xl border border-gray-200 z-[60]"
-                                      onMouseEnter={() =>
-                                        setHoveredSubmenu(submenu.title)
-                                      }
-                                      onMouseLeave={() =>
-                                        setHoveredSubmenu(null)
-                                      }
-                                    >
-                                      <div className="p-3 space-y-1">
-                                        {submenu.items.map((menuItem) => (
-                                          <Link
-                                            key={menuItem.name}
-                                            to={menuItem.href}
-                                            className={`block text-sm px-3 py-1.5 rounded transition-all duration-200 focus:outline-none ${
-                                              isActive(menuItem.href)
-                                                ? "text-primary bg-accent-tint font-semibold"
-                                                : "text-text-secondary hover:text-primary hover:bg-accent-tint"
-                                            }`}
-                                          >
-                                            {menuItem.name}
-                                          </Link>
-                                        ))}
-                                      </div>
-                                    </div>
-                                  )}
-                                </li>
-                              ))}
-                            </ul>
-                          ) : (
-                            /* Regular Category Items */
-                            <ul className="space-y-2">
-                              {category.items.map((menuItem) => (
-                                <li key={menuItem.name}>
-                                  <Link
-                                    to={menuItem.href}
-                                    className={`block text-sm px-3 py-1 rounded transition-all duration-200 focus:outline-none ${
-                                      isActive(menuItem.href)
-                                        ? "text-primary bg-accent-tint font-semibold"
-                                        : "text-text-secondary hover:text-primary hover:bg-accent-tint"
-                                    }`}
-                                  >
-                                    {menuItem.name}
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
+                                  {menuItem.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
                         </div>
                       ))}
                     </div>
@@ -321,66 +245,17 @@ const Navbar = () => {
                         {/* Expanded Category Content */}
                         {expandedMobileCategories[category.title] && (
                           <div className="space-y-1 mt-1">
-                            {/* Category with Submenu (Safety Matches) */}
-                            {category.hasSubmenu ? (
-                              <div className="space-y-2">
-                                {category.submenus.map((submenu) => (
-                                  <div key={submenu.title}>
-                                    <button
-                                      onClick={() =>
-                                        toggleMobileCategory(
-                                          `${category.title}-${submenu.title}`,
-                                        )
-                                      }
-                                      className="w-full flex items-center justify-between px-3 py-1.5 text-sm font-semibold text-[#666666] hover:text-[#00AEEF] rounded-lg focus:outline-none"
-                                    >
-                                      <span>{submenu.title}</span>
-                                      <FaChevronDown
-                                        className={`text-xs transition-transform duration-200 ${
-                                          expandedMobileCategories[
-                                            `${category.title}-${submenu.title}`
-                                          ]
-                                            ? "rotate-180"
-                                            : ""
-                                        }`}
-                                      />
-                                    </button>
-
-                                    {/* Submenu Items */}
-                                    {expandedMobileCategories[
-                                      `${category.title}-${submenu.title}`
-                                    ] && (
-                                      <div className="pl-4 space-y-1">
-                                        {submenu.items.map((menuItem) => (
-                                          <Link
-                                            key={menuItem.name}
-                                            to={menuItem.href}
-                                            className="block px-3 py-1 text-sm text-[#666666] hover:text-[#00AEEF] hover:bg-gray-100 rounded-lg transition-all duration-200 focus:outline-none"
-                                            onClick={() =>
-                                              setIsMobileMenuOpen(false)
-                                            }
-                                          >
-                                            {menuItem.name}
-                                          </Link>
-                                        ))}
-                                      </div>
-                                    )}
-                                  </div>
-                                ))}
-                              </div>
-                            ) : (
-                              /* Regular Category Items */
-                              category.items.map((menuItem) => (
-                                <Link
-                                  key={menuItem.name}
-                                  to={menuItem.href}
-                                  className="block px-3 py-1 text-sm text-[#666666] hover:text-[#00AEEF] hover:bg-gray-100 rounded-lg transition-all duration-200 focus:outline-none"
-                                  onClick={() => setIsMobileMenuOpen(false)}
-                                >
-                                  {menuItem.name}
-                                </Link>
-                              ))
-                            )}
+                            {/* Category Items */}
+                            {category.items.map((menuItem) => (
+                              <Link
+                                key={menuItem.name}
+                                to={menuItem.href}
+                                className="block px-3 py-1 text-sm text-[#666666] hover:text-[#00AEEF] hover:bg-gray-100 rounded-lg transition-all duration-200 focus:outline-none"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                              >
+                                {menuItem.name}
+                              </Link>
+                            ))}
                           </div>
                         )}
                       </div>
