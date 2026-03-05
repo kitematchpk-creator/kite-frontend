@@ -31,7 +31,7 @@ const HeroCarousel = () => {
       description:
         "Export Brands: Shrimp, Helicopter, Sunflower, Chinook | Local Brands: Kite, Bird, Olympia, Party, Tanga - Premium quality safety matches manufactured with the latest technology.",
       image: hero2,
-      link: "/products",
+      link: "/products/safety-matches",
       gradient: "from-blue-900/50 via-blue-800/30 to-transparent",
       accentColor: "#1E3A8A",
     },
@@ -42,7 +42,7 @@ const HeroCarousel = () => {
       description:
         "Powerful stain removal with color protection technology. Keeps your clothes looking new, wash after wash.",
       image: hero4,
-      link: "/products",
+      link: "/products/burq-action",
       gradient: "from-orange-900/50 via-orange-700/30 to-transparent",
       accentColor: "#EA580C",
     },
@@ -53,7 +53,7 @@ const HeroCarousel = () => {
       description:
         "Powerful cleaning with natural lemon freshness. Gentle on hands, tough on grease. The perfect choice for sparkling dishes.",
       image: hero3,
-      link: "/products",
+      link: "/products/dish-wash-bar",
       gradient: "from-green-800/50 via-green-600/30 to-transparent",
       accentColor: "#059669",
     },
@@ -64,7 +64,7 @@ const HeroCarousel = () => {
       description:
         "Experience the speed and reliability of Swift Delivery Services. We ensure your packages reach their destination on time, every time, with our extensive nationwide coverage.",
       image: hero1,
-      link: "/services",
+      link: "/export",
       gradient: "from-purple-900/50 via-purple-700/30 to-transparent",
       accentColor: "#7C3AED",
     }

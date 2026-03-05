@@ -7,41 +7,21 @@ import {
   FaAward,
   FaCheckCircle,
 } from "react-icons/fa";
-import world_map_export_destinations from "../assets/fmcgForeignDestination.jpeg";
-import export_shipping_container from "../assets/delivery.jpeg";
-
-// Import match images
-import simba from "../assets/export/simba.jpg";
-import football from "../assets/export/football.jpg";
-import alMoallam from "../assets/export/al_moallam.jpg";
-import redMac from "../assets/export/red_mac.jpg";
-import woodFlower from "../assets/export/wood_flower.jpg";
-import alKarama from "../assets/export/al_karama.jpg";
-import theGosse from "../assets/export/the_gosse.jpg";
-import ziynat from "../assets/export/ziynat.jpg";
-import alFelaij from "../assets/export/al_felaij.jpg";
-import magiaBunicii from "../assets/export/magia_bunicii.jpg";
-import zebra from "../assets/export/zebra.jpg";
-import zippy from "../assets/export/zippy.jpg";
 
 const ExportSection = () => {
   const safetyMatches = [
-    { brand: "Simba", country: "Congo", image: simba },
-    { brand: "Wood Flower", country: "Romania", image: woodFlower },
-    { brand: "Al Felaij", country: "UAE", image: alFelaij },
-    { brand: "The Gosse", country: "Nigeria", image: theGosse },
-    { brand: "Football", country: "Saudi Arabia", image: football },
-    {
-      brand: "Magia bunicii",
-      country: "Romania",
-      image: magiaBunicii,
-    },
-    { brand: "Zebra", country: "Lebanon", image: zebra },
-    { brand: "Zippy", country: "South Africa", image: zippy },
-    { brand: "Al Karama", country: "Sudan", image: alKarama },
-    { brand: "Al Moallam", country: "Sudan", image: alMoallam },
-    { brand: "Ziynat", country: "Uzbekistan", image: ziynat },
-    { brand: "ReD Mac", country: "Ukraine", image: redMac },
+    { brand: "Simba", country: "Congo", flag: "🇨🇬", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Simba" },
+    { brand: "Wood Flower", country: "Romania", flag: "🇷🇴", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Wood+Flower" },
+    { brand: "Al Felaij", country: "UAE", flag: "🇦🇪", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Al+Felaij" },
+    { brand: "The Gosse", country: "Nigeria", flag: "🇳🇬", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=The+Gosse" },
+    { brand: "Football", country: "Saudi Arabia", flag: "🇸🇦", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Football" },
+    { brand: "Magia bunicii", country: "Romania", flag: "🇷🇴", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Magia+bunicii" },
+    { brand: "Zebra", country: "Lebanon", flag: "🇱🇧", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Zebra" },
+    { brand: "Zippy", country: "South Africa", flag: "🇿🇦", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Zippy" },
+    { brand: "Al Karama", country: "Sudan", flag: "🇸🇩", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Al+Karama" },
+    { brand: "Al Moallam", country: "Sudan", flag: "🇸🇩", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Al+Moallam" },
+    { brand: "Ziynat", country: "Uzbekistan", flag: "🇺🇿", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=Ziynat" },
+    { brand: "ReD Mac", country: "Ukraine", flag: "🇺🇦", image: "https://via.placeholder.com/300x400/ED028C/FFFFFF?text=ReD+Mac" },
   ];
 
   const woodenSplints = [
@@ -204,7 +184,7 @@ const ExportSection = () => {
                     {match.brand}
                   </h4>
                   <div className="flex items-center justify-center gap-2 text-[#666666]">
-                    <span className="text-2xl">{match.flag}</span>
+                    <span className="text-2xl">{match.flag || "🌍"}</span>
                     <span className="font-medium">{match.country}</span>
                   </div>
                 </div>
@@ -309,11 +289,11 @@ const ExportSection = () => {
           </h3>
 
           {/* Map Placeholder */}
-          <div className="relative bg-gray-500 rounded-3xl flex items-center justify-center mb-12 overflow-hidden group">
+          <div className="relative bg-gradient-to-br from-[#00AEEF] to-[#0095CC] rounded-3xl flex items-center justify-center mb-12 overflow-hidden group h-96">
             <img
-              src={world_map_export_destinations}
+              src="https://via.placeholder.com/1200x600/00AEEF/FFFFFF?text=Global+Export+Map"
               alt="Global Export Map"
-              className="w-full  object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
 
@@ -436,17 +416,12 @@ const ExportSection = () => {
             </div>
 
             {/* Image Placeholder */}
-            <div className="h-80 bg-gray-500 overflow-hidden rounded-2xl flex items-center justify-center ">
+            <div className="h-80 bg-gradient-to-br from-[#ED028C] to-[#d4027a] overflow-hidden rounded-2xl flex items-center justify-center">
               <img
-                src={export_shipping_container}
+                src="https://via.placeholder.com/800x600/ED028C/FFFFFF?text=Export+Shipping+Container"
                 alt="Export Shipping Container"
-                className="w-full h-full scale-155"
+                className="w-full h-full object-cover"
               />
-              {/* <div className="text-center">
-                <FaShippingFast className="text-8xl text-white mx-auto mb-4 drop-shadow-lg" />
-                <p className="text-white font-medium text-lg mb-2">📷 Export Shipping Container Image</p>
-                <p className="text-sm text-white/70">Image: export-shipping-container.jpg</p>
-              </div> */}
             </div>
           </div>
         </div>

@@ -1,26 +1,31 @@
-import { FaFire, FaLayerGroup } from "react-icons/fa";
-import kite_matches from "../assets/products/kite.jpeg";
-import burq_detergent from "../assets/products/BurqDetergent.jpeg";
-import kite_glow from "../assets/kiteglow.jpg";
-import vero from "../assets/vero.jpg";
-import dishwash from "../assets/dishwashbar.jpg";
+import { FaFire, FaLayerGroup, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import kite_img from "../assets/products/kite.jpeg"
+import burq_img from "../assets/products/BurqDetergent.jpeg"
+import glow_img from "../assets/kiteglow.jpg"
+
 
 const ProductsSection = () => {
-  const products = [
+  // Flatten products to show individual items
+  const allProducts = [
     {
-      id: "matches",
+      id: "safety-matches",
+      category: "Safety Matches",
       title: "Safety Matches - Pakistan's #1 Brand",
-      icon: <FaFire className="text-6xl text-[#ED028C]" />,
+      icon: <FaFire className="text-5xl text-[#ED028C]" />,
       description:
         "Pakistan's largest safety match manufacturer and exporter since 1995. Over 50 years of manufacturing excellence with Kite brand leading exports to 40+ countries worldwide.",
+      shortDescription:
+        "Premium quality safety matches with damp-proof technology and international safety standards.",
+      image: kite_img,
+      color: "#ED028C",
       features: [
         "پل میں روشن دیر پہ شعلہ (Light in rain, reliable always)",
         "نمی سے محفوظ (Damp proof)",
         "بہترین برانڈ (Best brand)",
         "اضافی تیلیاں (Extra sticks)",
         "Carborised and damp proof",
-        "Different striking surfaces (Dotted, Full Brush Coated, Plain Strip)",
+        "Different striking surfaces",
         "International safety standards",
       ],
       brands: [
@@ -66,107 +71,111 @@ const ProductsSection = () => {
           note: "Group's 3rd match manufacturing unit",
         },
       ],
-      image: kite_matches,
     },
     {
-      id: "detergents",
-      title: "Detergents - Premium Cleaning Solutions",
-      icon: <FaLayerGroup className="text-6xl text-[#00AEEF]" />,
+      id: "kite-glow",
+      category: "Detergents",
+      title: "Kite Glow Detergent",
+      icon: <FaLayerGroup className="text-5xl text-[#00AEEF]" />,
       description:
-        "Premium detergent brands featuring advanced cleaning technology. BURQ Action with Color Guard, Kite Glow with Triple Enzyme technology, and Vero with powerful stain removal - trusted by households across Pakistan.",
-      products: [
-        {
-          name: "Kite Glow",
-          image: kite_glow,
-          tagline: "کائٹ گلو لائے... بہتر پروخوشبو، بہترین صفائی!",
-          description:
-            "Flagship brand launched in March 2025 with Triple Enzyme technology",
-          features: [
-            "شادی کی دھوئین و ضرورت آسانی سے (Tough stains removed easily)",
-            "کپڑوں کی نگہداشت کے لیے (Fabric care protection)",
-            "کپڑوں کے رنگوں کا تحفظ (Color protection)",
-          ],
-          skus: [
-            { size: "2 KG", packing: 6, price: 511.5 },
-            { size: "1 KG", packing: 12, price: 269.7 },
-            { size: "500 GM", packing: 24, price: 139.5 },
-            { size: "RS.99", packing: 48, price: 92.07 },
-            { size: "RS.50", packing: 96, price: 46.5 },
-            { size: "RS.20", packing: 96, price: 18.6 },
-            { size: "RS.10", packing: 144, price: 9.3 },
-          ],
-        },
-        {
-          name: "BURQ Action",
-          image: burq_detergent,
-          tagline: "دلچ کا صفائی یا صرف برق ایکشن لائیا",
-          description:
-            "Premium detergent with Colour Guard technology for color protection",
-          features: [
-            "رنگوں کی چمک پہلے (Color brightness maintained)",
-            "بامومبدگی جلد کے عمروں (Skin safety formula)",
-            "کپڑوں کے رنگوں کی حفاظت (Color protection)",
-          ],
-          skus: [
-            { size: "2.3 KG", packing: 6, price: 464.07 },
-            { size: "1 KG", packing: 12, price: 213.9 },
-            { size: "RS.99", packing: 24, price: 92.07 },
-            { size: "RS.50", packing: 48, price: 46.5 },
-            { size: "RS.20", packing: 96, price: 18.6 },
-            { size: "RS.10", packing: 204, price: 9.3 },
-          ],
-        },
-        {
-          name: "Vero Detergent",
-          image: vero,
-          tagline: "کپڑوں کو دین نئی نیک پہترین بحت کے ساتھ",
-          description: "Premium cleaning powder with natural ingredients",
-          features: [
-            "بہترین صفائی (Excellent cleaning)",
-            "رنگین کے لیے محفوظ (Safe for colors)",
-            "کم کے زیادہ چلے (Long lasting)",
-          ],
-          skus: [
-            { size: "20 KG", packing: 4, price: null },
-            { size: "5 KG", packing: 4, price: null },
-          ],
-        },
+        "Flagship brand launched in March 2025 with Triple Enzyme technology. Premium cleaning power with fabric care protection.",
+      shortDescription:
+        "Triple Enzyme technology for tough stain removal and color protection.",
+      image: glow_img,
+      color: "#00AEEF",
+      tagline: "کائٹ گلو لائے... بہتر پروخوشبو، بہترین صفائی!",
+      features: [
+        "شادی کی دھوئین و ضرورت آسانی سے (Tough stains removed easily)",
+        "کپڑوں کی نگہداشت کے لیے (Fabric care protection)",
+        "کپڑوں کے رنگوں کا تحفظ (Color protection)",
       ],
-      services:
-        "Private labeling and toll manufacturing services available with minimal variation",
+      skus: [
+        { size: "2 KG", packing: 6, price: 511.5 },
+        { size: "1 KG", packing: 12, price: 269.7 },
+        { size: "500 GM", packing: 24, price: 139.5 },
+        { size: "RS.99", packing: 48, price: 92.07 },
+        { size: "RS.50", packing: 96, price: 46.5 },
+        { size: "RS.20", packing: 96, price: 18.6 },
+        { size: "RS.10", packing: 144, price: 9.3 },
+      ],
     },
     {
-      id: "dishwash",
-      title: "Dish Wash Bar - Extra Strength",
-      icon: <FaLayerGroup className="text-6xl text-[#059669]" />,
+      id: "burq-action",
+      category: "Detergents",
+      title: "BURQ Action Detergent",
+      icon: <FaLayerGroup className="text-5xl text-[#00AEEF]" />,
       description:
-        "Kite Dish Wash Bar with premium lemon fragrance and slow dissolution - beats market leaders. Perfect for sparkling clean dishes with powerful grease removal.",
-      image: dishwash,
-      products: [
-        {
-          name: "Kite Dish Wash Bar",
-          tagline: "جہاں صفائی، وہاں کائٹ ڈش واش بار",
-          description: "Premium lemon fragrance with slow dissolution",
-          features: [
-            "لیموں کی خوشبو کی سانحہ (Premium lemon fragrance)",
-            "چکنائی کا دشمن (Tough on grease)",
-            "کم کے زیادہ چلے (Long lasting)",
-            "ہاتھوں کے لیے نرم (Gentle on hands)",
-          ],
-          skus: [
-            { size: "SUPER BAR", packing: 36, price: 44.63 },
-            { size: "LONG BAR", packing: 36, price: 35.91 },
-            { size: "LARGE BAR", packing: 36, price: 17.96 },
-            { size: "REGULAR BAR", packing: 48, price: 8.98 },
-          ],
-        },
+        "Premium detergent with Colour Guard technology for color protection. Maintains color brightness while providing excellent cleaning power.",
+      shortDescription:
+        "Colour Guard technology for vibrant colors and powerful cleaning.",
+      image: burq_img,
+      color: "#00AEEF",
+      tagline: "دلچ کا صفائی یا صرف برق ایکشن لائیا",
+      features: [
+        "رنگوں کی چمک پہلے (Color brightness maintained)",
+        "بامومبدگی جلد کے عمروں (Skin safety formula)",
+        "کپڑوں کے رنگوں کی حفاظت (Color protection)",
       ],
-      services: "Bulk orders and private labeling available",
+      skus: [
+        { size: "2.3 KG", packing: 6, price: 464.07 },
+        { size: "1 KG", packing: 12, price: 213.9 },
+        { size: "RS.99", packing: 24, price: 92.07 },
+        { size: "RS.50", packing: 48, price: 46.5 },
+        { size: "RS.20", packing: 96, price: 18.6 },
+        { size: "RS.10", packing: 204, price: 9.3 },
+      ],
+    },
+    {
+      id: "vero-detergent",
+      category: "Detergents",
+      title: "Vero Detergent",
+      icon: <FaLayerGroup className="text-5xl text-[#00AEEF]" />,
+      description:
+        "Premium cleaning powder with natural ingredients. Excellent cleaning power that's safe for colors and long-lasting.",
+      shortDescription:
+        "Natural ingredients for excellent cleaning and color safety.",
+      image: "https://via.placeholder.com/400x500/00AEEF/FFFFFF?text=Vero+Detergent",
+      color: "#00AEEF",
+      tagline: "کپڑوں کو دین نئی نیک پہترین بحت کے ساتھ",
+      features: [
+        "بہترین صفائی (Excellent cleaning)",
+        "رنگین کے لیے محفوظ (Safe for colors)",
+        "کم کے زیادہ چلے (Long lasting)",
+      ],
+      skus: [
+        { size: "20 KG", packing: 4, price: null },
+        { size: "5 KG", packing: 4, price: null },
+      ],
+    },
+    {
+      id: "dish-wash-bar",
+      category: "Dish Wash",
+      title: "Kite Dish Wash Bar",
+      icon: <FaLayerGroup className="text-5xl text-[#059669]" />,
+      description:
+        "Premium lemon fragrance with slow dissolution - beats market leaders. Perfect for sparkling clean dishes with powerful grease removal.",
+      shortDescription:
+        "Extra strength dish wash bar with premium lemon fragrance.",
+      image: "https://via.placeholder.com/400x500/059669/FFFFFF?text=Dish+Wash+Bar",
+      color: "#059669",
+      tagline: "جہاں صفائی، وہاں کائٹ ڈش واش بار",
+      features: [
+        "لیموں کی خوشبو کی سانحہ (Premium lemon fragrance)",
+        "چکنائی کا دشمن (Tough on grease)",
+        "کم کے زیادہ چلے (Long lasting)",
+        "ہاتھوں کے لیے نرم (Gentle on hands)",
+      ],
+      skus: [
+        { size: "SUPER BAR", packing: 36, price: 44.63 },
+        { size: "LONG BAR", packing: 36, price: 35.91 },
+        { size: "LARGE BAR", packing: 36, price: 17.96 },
+        { size: "REGULAR BAR", packing: 48, price: 8.98 },
+      ],
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-[#F9F9F9]">
+    <section className="py-20 bg-gradient-to-b from-white via-[#F9F9F9] to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -186,253 +195,80 @@ const ProductsSection = () => {
           </p>
         </div>
 
-        {/* Products */}
-        {products.map((product, index) => (
-          <div
-            key={product.id}
-            id={product.id}
-            className={`mb-20 ${index % 2 === 0 ? "scroll-mt-24" : "scroll-mt-24"}`}
-          >
-            <div
-              className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          {allProducts.map((product) => (
+            <Link
+              key={product.id}
+              to={`/products/${product.id}`}
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border-2 border-[#E0E0E0] hover:border-[#00AEEF] transform hover:-translate-y-2"
             >
-              {/* Content */}
-              <div className={index % 2 === 1 ? "lg:order-2" : ""}>
-                <div className="flex items-center mb-6">
-                  <div className="mr-6">{product.icon}</div>
-                  <h3 className="text-[#222222] text-3xl md:text-4xl font-bold">
+              {/* Product Image */}
+              <div className="relative h-64 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div
+                  className="absolute top-4 right-4 px-3 py-1 rounded-full text-white text-sm font-semibold shadow-lg"
+                  style={{ backgroundColor: product.color }}
+                >
+                  {product.category}
+                </div>
+              </div>
+
+              {/* Product Content */}
+              <div className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="mr-4" style={{ color: product.color }}>
+                    {product.icon}
+                  </div>
+                  <h3 className="text-[#222222] text-xl font-bold group-hover:text-[#00AEEF] transition-colors">
                     {product.title}
                   </h3>
                 </div>
 
-                <p className="text-[#666666] text-lg leading-relaxed mb-6">
-                  {product.description}
+                <p className="text-[#666666] text-sm mb-4 line-clamp-3">
+                  {product.shortDescription}
                 </p>
 
-                {/* Match Products */}
-                {product.id === "matches" && (
-                  <>
-                    <div className="mb-6">
-                      <h4 className="text-[#222222] text-xl font-bold mb-3">
-                        Product Features:
-                      </h4>
-                      <ul className="grid md:grid-cols-2 gap-3">
-                        {product.features.map((feature, idx) => (
-                          <li
-                            key={idx}
-                            className="flex items-start text-[#666666]"
-                          >
-                            <span className="w-2 h-2 bg-[#00AEEF] rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="mb-6">
-                      <h4 className="text-[#222222] text-xl font-bold mb-3">
-                        Available Sizes:
-                      </h4>
-                      <div className="overflow-x-auto">
-                        <table className="w-full">
-                          <thead className="bg-gradient-to-r from-[#ED028C] to-[#d4027a] text-white">
-                            <tr>
-                              <th className="px-6 py-3 text-left">SIZE</th>
-                              <th className="px-6 py-3 text-center">
-                                AVG STICKS PER BOX
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {product.sizes.map((size, idx) => (
-                              <tr
-                                key={idx}
-                                className="border-b hover:bg-gray-50"
-                              >
-                                <td className="px-6 py-3 font-bold text-[#222222]">
-                                  {size.size}
-                                </td>
-                                <td className="px-6 py-3 text-center text-[#666666]">
-                                  {size.avgSticks}
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-
-                    <div className="mb-6">
-                      <h4 className="text-[#222222] text-xl font-bold mb-3">
-                        Our Match Brands:
-                      </h4>
-                      <div className="grid md:grid-cols-2 gap-3">
-                        {product.brands.map((brand, idx) => (
-                          <div
-                            key={idx}
-                            className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] text-white px-4 py-3 rounded-lg font-semibold"
-                          >
-                            <span className="text-lg">{brand.name}</span>
-                            <span className="text-sm opacity-90 ml-2">
-                              ({brand.category})
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="bg-gradient-to-br from-[#FFEFF9] to-white p-6 rounded-xl border-2 border-[#FF8ACE]">
-                      <h4 className="text-[#222222] text-xl font-bold mb-4">
-                        Manufacturing Facilities:
-                      </h4>
-                      {product.facilities.map((facility, idx) => (
-                        <div key={idx} className="mb-3 last:mb-0">
-                          <p className="text-[#222222] font-semibold">
-                            {facility.name}
-                          </p>
-                          <p className="text-[#666666] text-sm">
-                            {facility.location}
-                          </p>
-                          <p className="text-[#00AEEF] text-sm italic">
-                            {facility.note}
-                          </p>
-                        </div>
-                      ))}
-                    </div>
-                  </>
-                )}
-
-                {/* Detergent and Dish Wash Products */}
-                {(product.id === "detergents" || product.id === "dishwash") && (
-                  <>
-                    <div className="space-y-6 mb-6">
-                      {product.products.map((item, idx) => (
-                        <div
+                {/* Features Preview */}
+                {product.features && product.features.length > 0 && (
+                  <div className="mb-4">
+                    <ul className="space-y-1">
+                      {product.features.slice(0, 2).map((feature, idx) => (
+                        <li
                           key={idx}
-                          className="bg-white p-6 rounded-xl border-2 border-[#E0E0E0] hover:border-[#FF8ACE] transition-all duration-300"
+                          className="flex items-start text-[#666666] text-xs"
                         >
-                          {/* Product Image */}
-                          {item.image && (
-                            <div className="mb-4">
-                              <img
-                                src={item.image}
-                                alt={item.name}
-                                className="w-full h-64 object-cover rounded-lg"
-                              />
-                            </div>
-                          )}
-
-                          <h4 className="text-[#222222] text-2xl font-bold mb-2">
-                            {item.name}
-                          </h4>
-                          {item.tagline && (
-                            <p className="text-[#00AEEF] font-semibold mb-2 italic text-lg">
-                              {item.tagline}
-                            </p>
-                          )}
-                          <p className="text-[#666666] mb-3">
-                            {item.description}
-                          </p>
-
-                          <div className="mb-4">
-                            <h5 className="text-[#222222] font-bold mb-2">
-                              Key Features:
-                            </h5>
-                            <ul className="space-y-2">
-                              {item.features.map((feature, fidx) => (
-                                <li
-                                  key={fidx}
-                                  className="flex items-center text-[#666666]"
-                                >
-                                  <span className="w-2 h-2 bg-[#ED028C] rounded-full mr-3"></span>
-                                  {feature}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-
-                          {item.skus && (
-                            <div className="mt-4">
-                              <h5 className="text-[#222222] font-bold mb-3">
-                                Available Sizes & Pricing:
-                              </h5>
-                              <div className="overflow-x-auto">
-                                <table className="w-full text-sm">
-                                  <thead className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] text-white">
-                                    <tr>
-                                      <th className="px-4 py-2 text-left">
-                                        SKU
-                                      </th>
-                                      <th className="px-4 py-2 text-center">
-                                        Packing/Flexi
-                                      </th>
-                                      <th className="px-4 py-2 text-right">
-                                        Retial Price (Rs.)
-                                      </th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {item.skus.map((sku, sidx) => (
-                                      <tr
-                                        key={sidx}
-                                        className="border-b hover:bg-gray-50"
-                                      >
-                                        <td className="px-4 py-2 font-semibold text-[#222222]">
-                                          {sku.size}
-                                        </td>
-                                        <td className="px-4 py-2 text-center text-[#666666]">
-                                          {sku.packing}
-                                        </td>
-                                        <td className="px-4 py-2 text-right text-[#00AEEF] font-bold">
-                                          {sku.price
-                                            ? sku.price.toFixed(2)
-                                            : "Contact for pricing"}
-                                        </td>
-                                      </tr>
-                                    ))}
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          )}
-                        </div>
+                          <span
+                            className="w-1.5 h-1.5 rounded-full mr-2 mt-1.5 flex-shrink-0"
+                            style={{ backgroundColor: product.color }}
+                          ></span>
+                          <span className="line-clamp-1">{feature}</span>
+                        </li>
                       ))}
-                    </div>
-
-                    {product.services && (
-                      <div className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] text-white p-6 rounded-xl">
-                        <p className="font-semibold text-lg">
-                          💼 {product.services}
-                        </p>
-                      </div>
-                    )}
-                  </>
-                )}
-              </div>
-
-              {/* Main Product Image (Only for Matches and Dishwash) */}
-              {(product.id === "matches" || product.id === "dishwash") &&
-                product.image && (
-                  <div className={index % 2 === 1 ? "lg:order-1" : ""}>
-                    <div className="relative z-10 text-center p-8">
-                      <img
-                        src={product.image}
-                        alt={product.title}
-                        className="w-full h-full object-cover rounded-2xl"
-                      />
-                    </div>
+                    </ul>
                   </div>
                 )}
-            </div>
-          </div>
-        ))}
+
+                {/* View Details Button */}
+                <div className="flex items-center text-[#00AEEF] font-semibold group-hover:text-[#ED028C] transition-colors">
+                  <span className="mr-2">View Details</span>
+                  <FaArrowRight className="transform group-hover:translate-x-2 transition-transform" />
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
 
         {/* CTA Section */}
-        <div className="mt-16 bg-gradient-to-r from-[#00AEEF] to-[#0095CC] rounded-3xl p-8 md:p-12 text-center">
+        <div className="bg-gradient-to-r from-[#00AEEF] to-[#0095CC] rounded-3xl p-8 md:p-12 text-center shadow-2xl">
           <h3 className="text-white text-3xl md:text-4xl font-bold mb-6 drop-shadow-lg">
             Interested in Kite Brand Products?
           </h3>
-          <p className="text-text-white-90 text-lg mb-8 max-w-3xl mx-auto drop-shadow-md">
+          <p className="text-white/90 text-lg mb-8 max-w-3xl mx-auto drop-shadow-md">
             Contact us for product inquiries, bulk orders, private labeling
             services, or export opportunities for Kite detergents, matches, and
             dish wash products.

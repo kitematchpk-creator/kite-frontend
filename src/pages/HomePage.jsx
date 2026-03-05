@@ -1,4 +1,5 @@
 import HeroCarousel from '../components/HeroCarousel';
+import BriefProductsSection from '../components/BriefProductsSection';
 import AboutSection from '../components/AboutSection';
 import BriefPromotion from '../components/BriefPromotion';
 import BriefExport from '../components/BriefExport';
@@ -10,6 +11,7 @@ const HomePage = () => {
   return (
     <>
       <HeroCarousel />
+      <BriefProductsSection />
       <AboutSection />
       <BriefPromotion />
       <BriefExport />

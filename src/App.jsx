@@ -5,6 +5,8 @@ import WhatsAppButton from "./components/WhatsAppButton";
 import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import ExportPage from "./pages/ExportPage";
 import SafetyMatchesPage from "./pages/SafetyMatchesPage";
 import WoodenSplintsPage from "./pages/WoodenSplintsPage";
 import ContactPage from "./pages/ContactPage";
@@ -21,6 +23,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/products" element={<ProductsPage />} />
+          <Route path="/products/:id" element={<ProductDetailPage />} />
+          <Route path="/export" element={<ExportPage />} />
           <Route
             path="/export/safety-matches"
             element={<SafetyMatchesPage />}
@@ -29,7 +33,6 @@ function App() {
             path="/export/wooden-splints"
             element={<WoodenSplintsPage />}
           />
-
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
