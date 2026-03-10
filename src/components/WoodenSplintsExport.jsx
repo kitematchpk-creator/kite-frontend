@@ -24,12 +24,12 @@ const WoodenSplintsExport = () => {
   ];
 
   const standardSizes = [
-    "40x2.05x2.05 mm",
-    "42x2.1x2.1 mm",
-    "40x2.00x2.00 mm",
-    "40x2.1x2.1 mm",
-    "42x2.00x2.00 mm",
-    "40x2.02x2.02 mm",
+    "40 X 2.05 X 2.05 mm",
+    "42 X 2.1 X 2.1 mm",
+    "40 X 2.00 X 2.00 mm",
+    "40 X 2.1 X 2.1 mm",
+    "42 X 2.00 X 2.00 mm",
+    "40 X 2.02 X 2.02 mm",
   ];
 
   const exportServices = [
@@ -201,7 +201,7 @@ const WoodenSplintsExport = () => {
         {/* Export Countries */}
         <div className="mb-20">
           <h3 className="text-[#222222] text-3xl font-bold text-center mb-4">
-            Global Splint Distribution
+            Global Splint Desitinations
           </h3>
           <p className="text-[#666666] text-center mb-12 max-w-2xl mx-auto">
             We export to 6+ countries across multiple continents
