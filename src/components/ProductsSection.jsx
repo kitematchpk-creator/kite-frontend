@@ -84,9 +84,9 @@ const ProductsSection = () => {
       color: "#00AEEF",
       tagline: "کائٹ گلو لائے... بہتر پروخوشبو، بہترین صفائی!",
       features: [
-        "Tough stains removed easily)",
-        "Fabric care protection)",
-        "Color protection)",
+        "Tough stains removed easily",
+        "Fabric care protection",
+        "Color protection",
       ],
       skus: [
         { size: "2 KG", packing: 6, price: 511.5 },
@@ -111,9 +111,9 @@ const ProductsSection = () => {
       color: "#00AEEF",
       tagline: "دلچ کا صفائی یا صرف برق ایکشن لائیا",
       features: [
-        "رنگوں کی چمک پہلے (Color brightness maintained)",
-        "بامومبدگی جلد کے عمروں (Skin safety formula)",
-        "کپڑوں کے رنگوں کی حفاظت (Color protection)",
+        "Color brightness maintained",
+        "Skin safety formula",
+        "Color protection",
       ],
       skus: [
         { size: "2.3 KG", packing: 6, price: 464.07 },
@@ -137,9 +137,9 @@ const ProductsSection = () => {
       color: "#00AEEF",
       tagline: "کپڑوں کو دین نئی نیک پہترین بحت کے ساتھ",
       features: [
-        "بہترین صفائی (Excellent cleaning)",
-        "رنگین کے لیے محفوظ (Safe for colors)",
-        "کم کے زیادہ چلے (Long lasting)",
+        "Excellent cleaning",
+        "Safe for colors",
+        "Long lasting",
       ],
       skus: [
         { size: "20 KG", packing: 4, price: null },
@@ -159,10 +159,10 @@ const ProductsSection = () => {
       color: "#059669",
       tagline: "جہاں صفائی، وہاں کائٹ ڈش واش بار",
       features: [
-        "لیموں کی خوشبو کی سانحہ (Premium lemon fragrance)",
-        "چکنائی کا دشمن (Tough on grease)",
-        "کم کے زیادہ چلے (Long lasting)",
-        "ہاتھوں کے لیے نرم (Gentle on hands)",
+        "Premium lemon fragrance",
+        "Tough on grease",
+        "Long lasting",
+        "Gentle on hands",
       ],
       skus: [
         { size: "SUPER BAR", packing: 36, price: 44.63 },
