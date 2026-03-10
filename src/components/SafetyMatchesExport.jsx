@@ -57,7 +57,7 @@ const SafetyMatchesExport = () => {
       icon: <FaFileContract className="text-5xl" />,
       title: "Documentation Support",
       description:
-        "Full assistance with export documentation, permits, certificates of origin, and regulatory compliance.",
+        "Full assistance with export documentation, permits, certificate of origin, and regulatory compliance.",
       points: ["Export licenses", "Customs clearance", "Certificate of origin"],
     },
     {
@@ -118,10 +118,20 @@ const SafetyMatchesExport = () => {
     {
       title: "Box Sizes",
       options: [
-        "Small boxes (30-40 sticks)",
-        "Medium boxes (50-60 sticks)",
-        "Large boxes (70-80 sticks)",
-        "Custom sizes available",
+        "Small boxes (26-32 sticks)",
+        "Regular boxes (avg 42 sticks)",
+        "Classic boxes (avg 45 sticks)",
+        "Large boxes (avg 56 sticks)",
+        "Customized number of sticks in boxes available",
+      ],
+    },
+    {
+      title: "Packing Material",
+      options: [
+        "Cellophane wrapping",
+        "Paper wrapping",
+        // "Dozen packing",
+        // "Gross packing",
       ],
     },
     {
@@ -130,16 +140,6 @@ const SafetyMatchesExport = () => {
         "500 boxes per carton",
         "1000 boxes per carton",
         "1200 boxes per carton",
-        "Custom quantities",
-      ],
-    },
-    {
-      title: "Packing Material",
-      options: [
-        "Cellophane wrapping",
-        "Paper wrapping",
-        "Dozen packing",
-        "Gross packing",
       ],
     },
   ];
