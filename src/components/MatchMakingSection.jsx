@@ -10,29 +10,13 @@ const MatchMakingSection = () => {
 
   const handleVideoClick = () => {
     setIsExpanded(true);
-    if (videoRef.current) {
-      videoRef.current.muted = false;
-    }
+    // Small video stays muted, only expanded video has audio
   };
 
   const handleClose = (e) => {
     e.stopPropagation();
     setIsExpanded(false);
-    if (videoRef.current) {
-      videoRef.current.muted = true;
-    }
-  };
-
-  const handleExpandedVideoPause = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = true;
-    }
-  };
-
-  const handleExpandedVideoPlay = () => {
-    if (videoRef.current && isExpanded) {
-      videoRef.current.muted = false;
-    }
+    // Small video remains muted
   };
 
   return (
@@ -154,8 +138,6 @@ const MatchMakingSection = () => {
                   loop
                   playsInline
                   controls
-                  onPause={handleExpandedVideoPause}
-                  onPlay={handleExpandedVideoPlay}
                 >
                   <source src={match_making} type="video/mp4" />
                   Your browser does not support the video tag.
