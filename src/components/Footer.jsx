@@ -67,7 +67,7 @@ const Footer = () => {
     {
       title: "Mohsin Enterprises Pvt. Ltd.",
       address: "W-21, 22 Industrial Estate, Jumrud Road, Hayatabad Peshawar",
-      phone: "+92 91 581741617",
+      phone: "+92 91 5817416 17",
       // email: "fd@kitematchpk.com",
     },
   ];
