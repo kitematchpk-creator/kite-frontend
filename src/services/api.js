@@ -1,4 +1,25 @@
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+function resolveApiBaseUrl() {
+  const envBase = (import.meta.env.VITE_API_BASE_URL || "").trim();
+  if (envBase) {
+    return envBase.replace(/\/+$/, "");
+  }
+
+  const host = window.location.hostname;
+  const isLocalHost =
+    host === "localhost" ||
+    host === "127.0.0.1" ||
+    host === "::1" ||
+    host.endsWith(".local");
+
+  if (isLocalHost) {
+    return "http://localhost:5000/api";
+  }
+
+  // Production default: same origin (frontend and backend behind one domain/proxy).
+  return `${window.location.origin}/api`;
+}
+
+const API_BASE_URL = resolveApiBaseUrl();
 
 async function handleResponse(res) {
   if (!res.ok) {
